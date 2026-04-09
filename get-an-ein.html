@@ -343,7 +343,28 @@ footer img{height:24px}
 .article-wrap .alert strong { color:#111; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -378,15 +399,39 @@ footer img{height:24px}
   <h2>When You Need an EIN</h2>
   <p>Even single-member LLCs should get an EIN. It's free, takes minutes, and protects your SSN from being shared with banks, clients, and vendors.</p>
   <p>Your LLC legally needs an EIN if you:</p>
-  <ul>
-    <li>Have employees or plan to hire</li>
-    <li>Have multiple members (multi-member LLC)</li>
-    <li>Choose to be taxed as a corporation (S-Corp or C-Corp election)</li>
-    <li>Need to open a US business bank account (most banks require it)</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Have employees or plan to hire</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Have multiple members (multi-member LLC)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Choose to be taxed as a corporation (S-Corp or C-Corp election)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Need to open a US business bank account (most banks require it)</span>
+      </div>
+    </div>
+</div>
   
   <h2>Getting an EIN Without an SSN</h2>
-  <div class="alert">
+  <div class="glass-box" style="margin:32px 0;">
     <strong>For International Founders:</strong> You do NOT need an ITIN or SSN to get an EIN for your LLC! The EIN is for the business entity, not you personally. You can also use a foreign address on the application.
   </div>
   <p>International founders without a Social Security Number cannot use the IRS online application, so the process requires faxing or mailing Form SS-4. But don't worry, <strong>our LLC formation package handles this entirely for you</strong>. We will acquire your EIN directly from the IRS rapidly on your behalf, so you don't need to deal with the paperwork or long wait times.</p>

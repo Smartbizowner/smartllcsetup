@@ -361,7 +361,28 @@ footer img{height:24px}
 .contact-form .form-note { font-size:12px; color:var(--gray-500); text-align:center; margin-top:14px; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -393,7 +414,7 @@ footer img{height:24px}
   <p>An annual report is an administrative filing that keeps your state records current. It typically confirms your registered agent, business address, and member/manager information. Despite the name, some states require these filings every two years rather than yearly.</p>
   <p>Annual reports are <strong>not tax returns</strong>. They are compliance documents that confirm your business still exists and the state's records are up to date. Filing your annual report is separate from filing your federal tax return with the IRS.</p>
 
-  <div class="alert">
+  <div class="glass-box" style="margin:32px 0;">
     <strong>Important:</strong> Every US LLC must complete its annual renewal on time. Missing this deadline can result in late fees, loss of good standing, or eventual administrative dissolution of your company.
   </div>
 
@@ -415,24 +436,87 @@ footer img{height:24px}
   </table>
 
   <h2>The Filing Process</h2>
-  <ol>
-    <li><strong>Reminder notification:</strong> Most states send a reminder 60-90 days before the deadline to your registered agent.</li>
-    <li><strong>Access the state portal:</strong> Each state has its own online filing system.</li>
-    <li><strong>Verify or update your details:</strong> Confirm the business address, registered agent, and member/manager information.</li>
-    <li><strong>Submit payment:</strong> Pay the state fee via credit card or bank transfer.</li>
-    <li><strong>Save your confirmation:</strong> Keep proof of filing for your records.</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>Reminder notification:</strong>
+        <span>Most states send a reminder 60-90 days before the deadline to your registered agent.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>Access the state portal:</strong>
+        <span>Each state has its own online filing system.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>Verify or update your details:</strong>
+        <span>Confirm the business address, registered agent, and member/manager information.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Submit payment:</strong>
+        <span>Pay the state fee via credit card or bank transfer.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <strong>Save your confirmation:</strong>
+        <span>Keep proof of filing for your records.</span>
+      </div>
+    </div>
+</div>
 
   <h2>What Happens If You Miss the Deadline?</h2>
   <p>Missing your annual renewal can be expensive and damaging to your business:</p>
-  <ul>
-    <li><strong>Late fees:</strong> States typically charge $25-$200+ depending on location and how overdue you are.</li>
-    <li><strong>Loss of good standing:</strong> Your LLC's status is compromised. This affects your ability to open bank accounts, obtain loans, register in other states, execute contracts, or pursue litigation.</li>
-    <li><strong>Administrative dissolution:</strong> After 1-2 years of continued non-compliance, the state may dissolve your LLC — eliminating your liability protection entirely.</li>
-    <li><strong>Stripe / Shopify flags:</strong> A dissolved LLC can trigger account freezes on payment processors.</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
 
-  <div class="warn">
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Late fees:</strong>
+        <span>States typically charge $25-$200+ depending on location and how overdue you are.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Loss of good standing:</strong>
+        <span>Your LLC's status is compromised. This affects your ability to open bank accounts, obtain loans, register in other states, execute contracts, or pursue litigation.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Administrative dissolution:</strong>
+        <span>After 1-2 years of continued non-compliance, the state may dissolve your LLC — eliminating your liability protection entirely.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Stripe / Shopify flags:</strong>
+        <span>A dissolved LLC can trigger account freezes on payment processors.</span>
+      </div>
+    </div>
+</div>
+
+  <div class="tax-highlight" style="margin:32px 0;">
     <strong>Heads up:</strong> Once your LLC is administratively dissolved, reinstating it is expensive and time-consuming — sometimes costing hundreds of dollars in back fees plus reinstatement charges.
   </div>
 
@@ -442,21 +526,65 @@ footer img{height:24px}
   <div class="pricing-card">
     <div class="price">$160<span style="font-size:18px;color:var(--gray-500);font-weight:600;">/year</span></div>
     <div class="price-sub">Wyoming LLC annual maintenance</div>
-    <ul style="padding-left:20px;">
-      <li><strong>$135</strong> — Wyoming state annual report fee</li>
-      <li><strong>$25</strong> — Registered agent renewal (required by law)</li>
-    </ul>
+    <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>$135</strong>
+        <span>Wyoming state annual report fee</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>$25</strong>
+        <span>Registered agent renewal (required by law)</span>
+      </div>
+    </div>
+</div>
     <p style="font-size:14px;color:var(--gray-500);margin-top:16px;margin-bottom:0;">Remember: Annual report filing does not cover your IRS tax filing. Form 5472 + Pro Forma 1120 is a separate requirement for foreign-owned LLCs.</p>
   </div>
 
   <h3>What's Included</h3>
-  <ul>
-    <li>Deadline tracking &amp; reminders before your renewal date</li>
-    <li>Preparation and filing of your annual report with the state</li>
-    <li>Payment of state filing fees</li>
-    <li>Registered agent renewal for the next year</li>
-    <li>Confirmation &amp; filing receipts sent to you</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Deadline tracking &amp; reminders before your renewal date</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Preparation and filing of your annual report with the state</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Payment of state filing fees</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Registered agent renewal for the next year</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Confirmation &amp; filing receipts sent to you</span>
+      </div>
+    </div>
+</div>
 
   <div style="margin-top:48px;text-align:center;padding:32px;border:1px solid var(--border);border-radius:var(--r);background:#fff;box-shadow:0 8px 24px rgba(0,0,0,0.04);">
     <h3 style="margin-top:0;margin-bottom:12px;">Don't let your LLC fall out of good standing</h3>
