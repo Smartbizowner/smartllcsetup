@@ -1,0 +1,9 @@
+# Python helper scripts (not needed on live site)
+*.py
+__pycache__/
+
+# macOS
+.DS_Store
+
+# IDE
+.claude/

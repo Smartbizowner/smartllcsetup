@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US LLC Formation — Smart Biz Owner by Mayank Malik</title>
+<meta name="description" content="Open a US LLC in 48 hours from anywhere. Starts from $299. EIN, registered agent, bank guidance — all included. 500+ LLCs delivered since 2021.">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;max-width:100vw;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6;-webkit-font-smoothing:antialiased;max-width:100vw;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ── TOKENS ── */
+:root{
+  --blue:#0947a6;
+  --green:#16a34a;
+  --green-d:#15803d;
+  --gold:#f59e0b;
+  --gray-50:#f9fafb;
+  --gray-100:#f3f4f6;
+  --gray-300:#d1d5db;
+  --gray-400:#9ca3af;
+  --gray-500:#6b7280;
+  --gray-700:#374151;
+  --gray-900:#111827;
+  --border:#e5e7eb;
+  --r:10px;
+  --max:720px;
+}
+
+/* ── UTILS ── */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.center{text-align:center}
+.label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px}
+h2{font-size:clamp(22px,5vw,32px);font-weight:800;letter-spacing:-0.02em;color:#111;line-height:1.2;margin-bottom:10px}
+.sub{font-size:15px;color:var(--gray-500);line-height:1.65;margin-bottom:0}
+hr{border:none;border-top:1px solid var(--border)}
+section{padding:64px 0;border-bottom:1px solid var(--border)}
+
+/* ── BUTTONS ── */
+.btn-green{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--green);color:#fff;
+  font-size:16px;font-weight:700;font-family:'Inter',sans-serif;
+  padding:15px 28px;border-radius:50px;border:none;cursor:pointer;
+  transition:background .18s;
+  box-shadow:0 2px 12px rgba(22,163,74,.2);
+  text-decoration:none;
+}
+.btn-green:hover{background:var(--green-d)}
+.btn-outline{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:#fff;color:var(--gray-700);
+  font-size:15px;font-weight:600;font-family:'Inter',sans-serif;
+  padding:14px 24px;border-radius:50px;border:1.5px solid var(--border);
+  cursor:pointer;transition:border-color .18s;text-decoration:none;
+}
+.btn-outline:hover{border-color:var(--gray-400)}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:99;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--border);
+  height:58px;
+  display:flex;align-items:center;
+  padding:0 20px;gap:10px;
+}
+.nav-logo{flex-shrink:0}
+.nav-logo img{height:30px;object-fit:contain}
+.nav-space{flex:1}
+.nav-wa{
+  display:flex;align-items:center;gap:6px;
+  background:#25D366;color:#fff;
+  font-size:13px;font-weight:600;
+  padding:8px 14px;border-radius:50px;
+  white-space:nowrap;transition:opacity .18s;
+}
+.nav-wa:hover{opacity:.88}
+.nav-wa svg{width:14px;height:14px;fill:#fff;flex-shrink:0}
+.nav-buy{
+  display:flex;align-items:center;
+  background:var(--green);color:#fff;
+  font-size:13px;font-weight:700;
+  padding:8px 16px;border-radius:50px;
+  white-space:nowrap;transition:background .18s;
+}
+.nav-buy:hover{background:var(--green-d)}
+
+/* ── HERO ── */
+.hero{
+  padding:56px 20px 52px;
+  border-bottom:1px solid var(--border);
+  text-align:center;
+}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  border:1px solid var(--border);
+  background:var(--gray-50);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-500);
+  padding:5px 14px;border-radius:50px;margin-bottom:24px;
+}
+.hero-pill-dot{width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.hero h1{
+  font-size:clamp(28px,7vw,48px);
+  font-weight:800;letter-spacing:-0.025em;
+  color:#111;line-height:1.1;
+  margin-bottom:16px;
+}
+.hero h1 span{color:var(--blue)}
+.hero-sub{
+  font-size:16px;color:var(--gray-500);
+  max-width:420px;margin:0 auto 32px;
+  line-height:1.65;
+}
+.hero-cta{
+  display:flex;flex-direction:column;gap:12px;
+  max-width:340px;margin:0 auto 28px;
+}
+.hero-trust{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  font-size:13px;color:var(--gray-400);flex-wrap:wrap;
+}
+.stars{display:flex;gap:2px}
+.star{color:var(--gold);font-size:13px}
+.hero-docs{
+  display:flex;justify-content:center;align-items:flex-end;gap:0;
+  margin-top:44px;
+}
+.hero-docs .d1{
+  width:180px;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:rotate(-5deg) translate(12px,8px);
+  z-index:1;position:relative;
+}
+.hero-docs .d2{
+  width:220px;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:rotate(2deg);
+  z-index:2;position:relative;
+}
+.hero-docs img{width:100%;display:block}
+
+/* ── PROOF STRIP ── */
+.proof{
+  background:var(--gray-50);
+  border-bottom:1px solid var(--border);
+  padding:28px 20px;
+}
+.proof-inner{
+  max-width:680px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:8px;text-align:center;
+}
+.p-num{font-size:24px;font-weight:800;letter-spacing:-0.02em;color:#111}
+.p-lbl{font-size:11px;color:var(--gray-400);margin-top:2px;font-weight:500}
+
+
+/* ── WHAT YOU GET ── */
+.get-list{
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.get-row{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:18px 20px;border-bottom:1px solid var(--border);
+}
+.get-row:last-child{border-bottom:none}
+.get-icon{
+  width:20px;height:20px;border-radius:5px;
+  background:rgba(0,0,0,.04);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+.get-icon svg{width:11px;height:11px;stroke:#111;stroke-width:2.5;fill:none}
+.get-row strong{display:block;font-size:14px;font-weight:600;margin-bottom:2px}
+.get-row span{font-size:13px;color:var(--gray-500)}
+
+/* ── WHY ── */
+.why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.why-cell{background:#fff;padding:28px 22px}
+.why-num{font-size:26px;font-weight:800;letter-spacing:-0.02em;color:var(--blue);margin-bottom:6px}
+.why-title{font-size:14px;font-weight:600;color:#111;margin-bottom:5px}
+.why-text{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── PROCESS ── */
+.proc-list{
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.proc-row{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:22px 20px;border-bottom:1px solid var(--border);
+}
+.proc-row:last-child{border-bottom:none}
+.proc-n{
+  width:32px;height:32px;border-radius:50%;
+  background:#111;color:#fff;
+  font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.proc-row strong{display:block;font-size:14px;font-weight:700;margin-bottom:3px}
+.proc-row span{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── PRICING ── */
+.price-card{
+  border:2px solid #111;border-radius:var(--r);
+  padding:36px 32px;
+  max-width:440px;margin:36px auto 0;
+  text-align:left;
+}
+.price-amt{font-size:52px;font-weight:800;letter-spacing:-0.04em;color:#111;line-height:1;margin-bottom:4px}
+.price-amt sup{font-size:24px;vertical-align:super;letter-spacing:0;font-weight:700}
+.price-note{font-size:13px;color:var(--gray-500);margin-bottom:24px}
+.price-features{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
+.pf{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--gray-700)}
+.pf svg{width:13px;height:13px;stroke:#111;stroke-width:2.5;fill:none;flex-shrink:0}
+.btn-buy{
+  display:flex;align-items:center;justify-content:center;width:100%;
+  background:var(--green);color:#fff;
+  font-size:16px;font-weight:700;font-family:'Inter',sans-serif;
+  padding:16px;border-radius:50px;border:none;cursor:pointer;
+  text-decoration:none;transition:background .18s;
+}
+.btn-buy:hover{background:var(--green-d)}
+.secure{text-align:center;font-size:12px;color:var(--gray-400);margin-top:10px}
+.texas{text-align:center;margin-top:14px;font-size:13px;color:var(--gray-500)}
+.texas a{color:var(--blue);font-weight:600;text-decoration:underline}
+
+/* ── REVIEWS ── */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.r-card{border:1px solid var(--border);border-radius:var(--r);padding:22px}
+.r-stars{display:flex;gap:2px;margin-bottom:10px}
+.r-star{color:var(--gold);font-size:13px}
+.r-name{font-size:13px;font-weight:700;margin-bottom:3px}
+.r-badge{display:inline-block;font-size:10px;font-weight:600;background:#eff6ff;color:var(--blue);padding:2px 6px;border-radius:4px;margin-left:5px}
+.r-title{font-size:13px;font-weight:600;margin-bottom:5px}
+.r-text{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── VIDEOS ── */
+.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.vid-wrap{border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;border:1px solid var(--border)}
+.vid-wrap iframe{width:100%;height:100%;display:block;border:none}
+.vid-single{margin-top:24px;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;border:1px solid var(--border)}
+.vid-single iframe{width:100%;height:100%;display:block;border:none}
+.vid-label{font-size:14px;font-weight:600;margin-bottom:6px;margin-top:28px}
+.vid-sub{font-size:13px;color:var(--gray-500);margin-bottom:0}
+
+/* ── SOCIAL LINKS ── */
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.s-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:500;color:var(--gray-700);
+  border:1px solid var(--border);padding:9px 18px;border-radius:50px;
+  transition:border-color .18s;
+}
+.s-link:hover{border-color:var(--gray-400)}
+.s-link svg{width:15px;height:15px;flex-shrink:0}
+
+/* ── CTA BOTTOM ── */
+.cta-btm{padding:72px 20px;text-align:center;border-bottom:none}
+.cta-btm .cta-inner{max-width:420px;margin:0 auto}
+.cta-btm h2{margin-bottom:10px}
+.cta-btm .sub{margin-bottom:28px}
+.cta-stack{display:flex;flex-direction:column;gap:12px}
+
+/* ── STATES ── */
+.states-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
+.s-chip{font-size:13px;font-weight:500;color:var(--gray-700);background:var(--gray-50);border:1px solid var(--border);padding:7px 16px;border-radius:50px}
+.s-chip.hot{color:var(--blue);background:#eff6ff;border-color:#bfdbfe;font-weight:600}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:24px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer img{height:24px}
+.footer-r{font-size:12px;color:var(--gray-400)}
+.footer-r a{color:var(--gray-400)}
+
+/* ── WA FLOAT ── */
+.wa-float{
+  position:fixed;bottom:20px;right:20px;z-index:200;
+  width:50px;height:50px;border-radius:50%;
+  background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(37,211,102,.4);
+  transition:transform .18s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:25px;height:25px;fill:#fff}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  nav{padding:0 14px;gap:8px}
+  .nav-wa span{display:none}
+  .nav-wa{padding:8px 12px}
+  .nav-buy{padding:8px 14px;font-size:12px}
+  .hero{padding:44px 16px 40px}
+  .hero h1{font-size:30px}
+  .hero-sub{font-size:15px}
+  .hero-cta{max-width:100%}
+  .hero-docs{display:none}
+  .proof-inner{grid-template-columns:repeat(2,1fr);gap:16px}
+  section{padding:48px 0}
+  .why-grid{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .vid-grid{grid-template-columns:1fr}
+  .price-card{padding:24px 20px}
+  footer{flex-direction:column;align-items:stretch}
+  footer .wrap {width: 100%;}
+  .btn-green,.btn-outline,.btn-buy{font-size:15px;padding:15px 20px}
+}
+
+/* ── FOOTER MOBILE FIX ── */
+@media(max-width:768px){
+  footer .wrap>div{text-align:left !important}
+  footer .wrap>div>div{align-items:flex-start !important}
+  .footer-bottom-bar{text-align:left !important; padding-left:0 !important; padding-right:0 !important;}
+  .footer-bottom-bar .footer-links{justify-content:flex-start !important;flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOAT WA -->
+<a class="wa-float" href="https://wa.me/917566631566" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="./index.html" class="nav-logo"><img src="./logo.png" alt="Smart LLC Setup"></a>
+  <div class="nav-space"></div>
+  <a class="nav-wa" href="https://wa.me/917566631566" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a class="nav-buy" href="#pricing">Get Started &mdash; From $299</a>
+</nav>
+
+<!-- 1. HERO -->
+<div class="hero">
+  <div class="hero-pill"><span class="hero-pill-dot"></span>500+ LLCs Delivered Since 2021</div>
+  <h1>Open a U.S. LLC with EIN in<br><span>48 hours</span><br>from anywhere</h1>
+  <p class="hero-sub" style="max-width:560px;">Done-for-you LLC starting from $299 plus EIN plus bank account plus Stripe and Shopify payments, all handled for you. <strong>No SSN, no U.S. address, and no travel required.</strong></p>
+  <div class="hero-cta" style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:12px;max-width:600px;margin:0 auto 28px;">
+    <a class="btn-green" href="#pricing">
+      Get Started &mdash; From $299 &rarr;
+    </a>
+    <a href="https://wa.me/917566631566" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#111827;color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:50px;text-decoration:none;transition:background .2s;gap:8px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Talk to an Expert
+    </a>
+  </div>
+  <div class="hero-trust">
+    <a href="https://www.trustpilot.com/review/smartbizowner.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:1px solid #e5e7eb;padding:6px 14px;border-radius:50px;background:#fff;transition:border-color .2s" onmouseover="this.style.borderColor='#9ca3af'" onmouseout="this.style.borderColor='#e5e7eb'">
+      <div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
+      <span style="color:var(--gray-700);font-size:13px;font-weight:600;">Excellent on <span style="color:#00b67a">Trustpilot</span></span>
+    </a>
+  </div>
+  <div class="hero-docs">
+    <div class="d1"><img src="./business_document.png" alt="IRS EIN Letter"></div>
+    <div class="d2"><img src="./articles_of_org.png" alt="Articles of Organization"></div>
+  </div>
+</div>
+
+<!-- PROOF STRIP -->
+<div class="proof">
+  <div class="proof-inner">
+    <div><div class="p-num">500+</div><div class="p-lbl">LLCs Delivered</div></div>
+    <div><div class="p-num">48h</div><div class="p-lbl">Avg. Delivery</div></div>
+    <div><div class="p-num">5+</div><div class="p-lbl">Years Active</div></div>
+    <div><div class="p-num">7</div><div class="p-lbl">US States</div></div>
+  </div>
+</div>
+
+<!-- NO SSN REQUIRED STRIP -->
+<section style="background:#fff;border-bottom:1px solid var(--border);padding:40px 20px;">
+  <div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:24px;">
+    <div>
+      <div style="width:40px;height:40px;border-radius:50%;background:rgba(37,99,235,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+      </div>
+      <h3 style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;">No SSN? No Problem.</h3>
+      <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Get your EIN without an SSN or ITIN. We handle the entire IRS application for you.</p>
+    </div>
+    <div>
+      <div style="width:40px;height:40px;border-radius:50%;background:rgba(37,99,235,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+      </div>
+      <h3 style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;">All-in-One Business Setup</h3>
+      <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Form your company, open a bank account, and manage payments — all in one place.</p>
+    </div>
+    <div>
+      <div style="width:40px;height:40px;border-radius:50%;background:rgba(37,99,235,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      </div>
+      <h3 style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;">Stress-Free Compliance</h3>
+      <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Get expert guidance and after-sales service to keep your business 100% compliant.</p>
+    </div>
+    <div>
+      <div style="width:40px;height:40px;border-radius:50%;background:rgba(37,99,235,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+      </div>
+      <h3 style="font-size:17px;font-weight:700;color:#111;margin-bottom:8px;">Remote U.S. Bank Account</h3>
+      <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Open your U.S. business bank account online from anywhere in the world.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. WHAT YOU GET -->
+<section>
+  <div class="wrap">
+    <div class="label center">What's included</div>
+    <h2 class="center">Starts from $299. Everything Included.</h2>
+    <p class="sub center" style="max-width:400px;margin:0 auto 0">No hidden fees. No upsells after checkout.</p>
+    <div class="get-list">
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>LLC Formation + All State Fees Paid</strong><span>Filed in 24–48 hours. State fees are included — no surprise charges.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>EIN / Tax ID — Same Day</strong><span>IRS takes 60+ days. We fast-track it. You get your EIN in 1 day.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>1 Year Registered Agent (Free)</strong><span>Required by law. Covered for your first year at no extra cost.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Operating Agreement</strong><span>Professional legal document for your LLC. Ready to use.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>US Bank Account Opening Help</strong><span>Our team will do the application process for the client.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Stripe &amp; Shopify Payment Application</strong><span>Stripe and Shopify payment applications handled by our expert team.</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>US Address &amp; Phone Setup Help</strong><span>We guide you on purchasing them (note: they are extra paid services).</span></div></div>
+      <div class="get-row"><div class="get-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>After-Sales Compliance Service</strong><span>Smooth after-sales service for your annual state tax, IRS filing, and more.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHY IT MATTERS -->
+<section style="background:var(--gray-50)">
+  <div class="wrap">
+    <div class="label center">Why it matters</div>
+    <h2 class="center">The Real Reason You Need This</h2>
+    <p class="sub center" style="max-width:420px;margin:0 auto 0">Every dollar you spend on ads through a non-US card costs you 4–5% in conversion fees. A US LLC fixes that permanently.</p>
+    <div class="why-grid">
+      <div class="why-cell">
+        <div class="why-num">0%</div>
+        <div class="why-title">Forex loss on ad spend</div>
+        <div class="why-text">Pay Facebook, Google, TikTok &amp; Shopify with a US card. No ₹ to $ conversion fee — ever.</div>
+      </div>
+      <div class="why-cell">
+        <div class="why-num">USD</div>
+        <div class="why-title">Accept payments globally</div>
+        <div class="why-text">Stripe, PayPal, Wise, Mercury — get paid like a US business. Clients trust a US company.</div>
+      </div>
+      <div class="why-cell">
+        <div class="why-num">&#127482;&#127480;</div>
+        <div class="why-title">Sell everywhere legally</div>
+        <div class="why-text">Amazon, Shopify, courses, freelancing — a US LLC is the key to global market access.</div>
+      </div>
+    </div>
+    
+    <div style="margin-top:40px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:32px 24px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.04);">
+      <h3 style="font-size:20px;font-weight:800;color:#111;margin-bottom:8px;">Forex Loss Calculator</h3>
+      <p style="font-size:14px;color:var(--gray-500);margin-bottom:24px;">See how much an Indian card charges you in hidden markup over time.</p>
+      
+      <div style="max-width:400px;margin:0 auto;">
+        <label for="adSpend" style="display:block;font-size:15px;font-weight:600;color:var(--gray-700);margin-bottom:12px;">Total Ad Spend (INR)</label>
+        <input type="range" id="adSpend" min="100000" max="10000000" step="100000" value="1000000" style="width:100%;cursor:pointer;accent-color:var(--blue);">
+        <div style="font-size:18px;font-weight:800;color:var(--blue);margin-top:12px;" id="adSpendValue">₹10 Lakhs</div>
+        
+        <div style="margin-top:24px;padding:20px;background:#fff1f2;border:1px solid #fecdd3;border-radius:12px;">
+          <div style="font-size:13px;color:#e11d48;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">You Lose in Bank Fees</div>
+          <div id="forexLossValue" style="font-size:32px;font-weight:800;color:#be123c;margin:6px 0;line-height:1;">₹50,000</div>
+          <p style="font-size:13px;color:#9f1239;margin:0;line-height:1.5;">A US LLC saves this 100%.</p>
+        </div>
+      </div>
+      
+      <script>
+        const slider = document.getElementById('adSpend');
+        const spendOutput = document.getElementById('adSpendValue');
+        const lossOutput = document.getElementById('forexLossValue');
+        
+        slider.addEventListener('input', function() {
+          const val = parseInt(this.value);
+          const loss = Math.round(val * 0.05); // 5% total fees (forex + markup)
+          
+          let displaySpend = "₹" + val.toLocaleString('en-IN');
+          if (val === 100000) displaySpend = "₹1 Lakh";
+          else if (val >= 100000 && val < 10000000) {
+            displaySpend = "₹" + (val/100000).toFixed(1).replace('.0', '') + " Lakhs";
+          } else if (val === 10000000) displaySpend = "₹1 Crore";
+          
+          spendOutput.innerText = displaySpend;
+          lossOutput.innerText = "₹" + loss.toLocaleString('en-IN');
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PRICING WIZARD -->
+<section style="background:#fff; padding-top: 32px;" id="pricing">
+  <div class="wrap center">
+    <div class="label">Get Started</div>
+    <h2>Pick Your State & Checkout</h2>
+    <p class="sub" style="max-width:440px;margin:0 auto 0">Select your preferred state below. Pricing reflects your final cost including state fees. No hidden markups.</p>
+    
+    <div style="max-width:800px;margin:40px auto 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;" id="stateSelector">
+      <!-- Buttons populated by JS -->
+    </div>
+
+    <!-- Dynamic Checkout Card -->
+    <div style="max-width:600px;margin:32px auto;background:#fff;border:2px solid var(--blue);border-radius:var(--r);padding:32px 24px;box-shadow:0 8px 32px rgba(0,0,0,0.06);position:relative;text-align:left;" id="checkoutCard">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--border);padding-bottom:24px;margin-bottom:24px;gap:16px;">
+        <div style="flex:1;">
+          <span style="font-size:13px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:0.5px;" id="selectedStateBadge">WYOMING LLC</span>
+          <h3 style="font-size:28px;font-weight:800;color:#111;margin:4px 0 0;" id="selectedStateTitle">Wyoming</h3>
+          <p style="font-size:14px;color:var(--gray-600);margin:4px 0 0;max-width:280px;line-height:1.5;" id="selectedStateDesc">Tax-free state. Best for privacy and low maintenance.</p>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:13px;color:var(--gray-500);font-weight:600;">Total Setup Cost</div>
+          <div style="font-size:36px;font-weight:800;color:#111;line-height:1;margin-top:2px;" id="selectedStatePrice">$379</div>
+        </div>
+      </div>
+      
+      <h4 style="font-size:16px;font-weight:700;margin-bottom:16px;">What's included in every package:</h4>
+      <div class="price-features" style="margin-bottom:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> LLC formation + fees</div>
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> EIN / Tax ID</div>
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Registered agent</div>
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Operating agreement</div>
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Bank account guidance</div>
+        <div class="pf"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> US address &amp; phone</div>
+      </div>
+      
+      <a class="btn-green" href="https://buy.stripe.com/eVacPE1sk39A6RybJm" target="_blank" rel="noopener" id="checkoutBtn" style="font-size:16px;padding:16px 28px;width:100%;text-align:center;margin-bottom:12px;">Pay $379 via Stripe &rarr;</a>
+      
+      <a href="https://wa.me/917566631566" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:100%;background:#111827;color:#fff;font-size:15px;font-weight:600;padding:14px 28px;border-radius:50px;text-decoration:none;transition:background .2s;gap:8px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Talk to an expert before starting
+      </a>
+      
+      <div style="text-align:center;margin-top:16px;">
+        <a href="https://calendly.com/smartbizownerofficial/discoverycall" target="_blank" rel="noopener" style="font-size:13.5px;color:var(--gray-500);text-decoration:underline;font-weight:500;">Or schedule a free discovery call here</a>
+      </div>
+
+      <p style="font-size:12px;color:var(--gray-400);text-align:center;margin-top:20px;display:flex;align-items:center;justify-content:center;gap:6px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Secure 256-bit Stripe Checkout
+      </p>
+    </div>
+
+    <!-- Script for Dynamic Selection -->
+    <script>
+      const statesData = [
+        { id: "wyoming", name: "Wyoming", price: 379, link: "https://buy.stripe.com/eVacPE1sk39A6RybJm", desc: "Tax-free state. Best for privacy and low maintenance. Our #1 choice.", badge: "MOST POPULAR" },
+        { id: "delaware", name: "Delaware", price: 379, link: "https://buy.stripe.com/eVacPE1sk39A6RybJm", desc: "Great for raising VC funding, advanced corporate court.", badge: "DELAWARE LLC" },
+        { id: "montana", name: "Montana", price: 299, link: "https://buy.stripe.com/00w5kEgmm7Wb3TrfMu8EM3i", desc: "No sales tax. Completely private ownership. Our lowest price.", badge: "MONTANA LLC" },
+        { id: "newmexico", name: "New Mexico", price: 329, link: "https://buy.stripe.com/4gw9Ds9YQ9xY2Bi171", desc: "Most affordable. No annual reporting fees. Great privacy.", badge: "NEW MEXICO LLC" },
+        { id: "florida", name: "Florida", price: 379, link: "https://buy.stripe.com/eVacPE1sk39A6RybJm", desc: "Perfect for businesses targeting LatAm or a local footprint.", badge: "FLORIDA LLC" },
+        { id: "texas", name: "Texas", price: 579, link: "https://buy.stripe.com/3cscPEc0Q9xY6RybJS", desc: "Strong local economy and no state income tax. Higher setup cost.", badge: "TEXAS LLC" },
+        { id: "colorado", name: "Colorado", price: 329, link: "https://buy.stripe.com/4gw9Ds9YQ9xY2Bi171", desc: "Fast filing times. Low ongoing annual maintenance fees.", badge: "COLORADO LLC" }
+      ];
+
+      const selectorContainer = document.getElementById('stateSelector');
+      const elTitle = document.getElementById('selectedStateTitle');
+      const elBadge = document.getElementById('selectedStateBadge');
+      const elDesc = document.getElementById('selectedStateDesc');
+      const elPrice = document.getElementById('selectedStatePrice');
+      const elBtn = document.getElementById('checkoutBtn');
+
+      function selectState(id) {
+        document.querySelectorAll('.state-btn').forEach(btn => {
+          if (btn.dataset.id === id) {
+            btn.style.background = 'var(--blue)';
+            btn.style.color = '#fff';
+            btn.style.borderColor = 'var(--blue)';
+          } else {
+            btn.style.background = '#fff';
+            btn.style.color = 'var(--gray-700)';
+            btn.style.borderColor = 'var(--border)';
+          }
+        });
+
+        const data = statesData.find(s => s.id === id);
+        elTitle.innerText = data.name;
+        elBadge.innerText = data.badge;
+        elDesc.innerText = data.desc;
+        elPrice.innerText = "$" + data.price;
+        elBtn.innerText = "Pay $" + data.price + " via Stripe \u2192";
+        elBtn.href = data.link;
+
+        const card = document.getElementById('checkoutCard');
+        card.style.opacity = '0.5';
+        card.style.transform = 'translateY(4px)';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+          card.style.transition = 'all 0.2s ease-out';
+        }, 50);
+      }
+
+      statesData.forEach(state => {
+        const btn = document.createElement('button');
+        btn.className = 'state-btn';
+        btn.dataset.id = state.id;
+        btn.innerText = state.name;
+        btn.style.cssText = 'padding:10px 20px;border-radius:50px;border:1px solid var(--border);background:#fff;font-size:14px;font-weight:600;cursor:pointer;color:var(--gray-700);transition:all 0.2s;font-family:inherit;';
+        
+        btn.onmouseover = function() { if(this.dataset.id !== elTitle.innerText.toLowerCase().replace(' ', '')) this.style.borderColor = 'var(--gray-400)'; };
+        btn.onmouseout = function() { if(this.dataset.id !== elTitle.innerText.toLowerCase().replace(' ', '')) this.style.borderColor = 'var(--border)'; };
+        btn.onclick = () => selectState(state.id);
+        
+        selectorContainer.appendChild(btn);
+      });
+
+      selectState('wyoming');
+    </script>
+  </div>
+</section>
+
+
+<!-- VIDEO REVIEWS -->
+<section style="background:var(--gray-50)">
+  <div class="wrap">
+    <div class="label center">Video proof</div>
+    <h2 class="center">Hear It From Clients</h2>
+    <div class="vid-grid">
+      <div class="vid-wrap"><iframe src="https://player.vimeo.com/video/622112840?badge=0&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Client review 1"></iframe></div>
+      <div class="vid-wrap"><iframe src="https://player.vimeo.com/video/664157351?badge=0&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Client review 2"></iframe></div>
+    </div>
+  </div>
+</section>
+<!-- 7. TRUST -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="label center">What clients say</div>
+    <h2 class="center">Real People. Real Results.</h2>
+    <div class="reviews">
+      <div class="r-card">
+        <div class="r-stars"><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span></div>
+        <div class="r-name">Md Ismail <span class="r-badge">Verified</span></div>
+        <div class="r-title">US LLC formation</div>
+        <div class="r-text">"I never imagined I can get LLC and EIN in 48 hrs. SBO — You guys nailed it."</div>
+      </div>
+      <div class="r-card">
+        <div class="r-stars"><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span></div>
+        <div class="r-name">Raj Nagpal <span class="r-badge">Verified</span></div>
+        <div class="r-title">Fastest service</div>
+        <div class="r-text">"LLC in 3 days, EIN in 1 day. Another service had me waiting 3+ weeks. Thanks Mayank!"</div>
+      </div>
+      <div class="r-card">
+        <div class="r-stars"><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span><span class="r-star">&#9733;</span></div>
+        <div class="r-name">Customer</div>
+        <div class="r-title">Smooth &amp; reliable</div>
+        <div class="r-text">"Fast, simple and reliable. Help was provided at every step. 100% recommended."</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:20px">
+      <a href="https://www.trustpilot.com/review/smartbizowner.com" target="_blank" rel="noopener" class="btn-outline" style="display:inline-flex;font-size:13px;padding:10px 20px;width:auto">
+        Read all reviews on Trustpilot &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROCESS -->
+<section style="background:var(--gray-50)">
+  <div class="wrap">
+    <div class="label center">How it works</div>
+    <h2 class="center">3 Steps. That's It.</h2>
+    <p class="sub center" style="max-width:380px;margin:0 auto 0">Pay once. Fill a form. We do everything else.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr));gap:24px;margin-top:40px;">
+      <!-- STEP 1 -->
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:32px 24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.02);position:relative;">
+        <div style="width:64px;height:64px;background:#eff6ff;color:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+          <!-- Document Icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </div>
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:13px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;">1</div>
+        <h3 style="font-size:18px;font-weight:800;color:#111;margin-bottom:12px;">Submit Details</h3>
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.6;margin:0;">Just 5 minutes. Enter your desired LLC name, state choice, passport legal name, and non-US address.</p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:32px 24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.02);position:relative;">
+        <div style="width:64px;height:64px;background:#f3f4f6;color:var(--gray-700);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+          <!-- Settings/Cogs -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </div>
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gray-700);color:#fff;font-size:13px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;">2</div>
+        <h3 style="font-size:18px;font-weight:800;color:#111;margin-bottom:12px;">We File Everything</h3>
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.6;margin:0;">Sit back and relax. We handle state LLC filing, fast EIN application, and assign your registered agent.</p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:32px 24px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.02);position:relative;">
+        <div style="width:64px;height:64px;background:#fdf2f8;color:#be123c;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+          <!-- Heart Icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </div>
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#e11d48;color:#fff;font-size:13px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;">3</div>
+        <h3 style="font-size:18px;font-weight:800;color:#111;margin-bottom:12px;">Hand-Off With Care</h3>
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.6;margin:0;">All documents are emailed directly, then we'll personally help you apply for your US bank, Stripe, and Shopify accounts.</p>
+      </div>
+
+    </div>
+</section>
+
+<!-- SERVICES WE PROVIDE -->
+<section style="background:#fff;border-bottom:1px solid var(--border);">
+<div class="wrap center">
+  <div class="label">Comprehensive Solutions</div>
+  <h2>Services that we provide.</h2>
+  <p class="sub" style="max-width:400px;margin:0 auto 0">We handle everything you need to start, run, and maintain your US company seamlessly.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;">
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">Wyoming LLC Formation</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">Delaware LLC Formation</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">New Mexico LLC Formation</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Reinstatement</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Annual Renewal</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">Seller Permit</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">Resell Certificate</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Closing</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Name Change</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Address Change</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">LLC Ownership Change</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">EIN (Non-US Resident)</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">EIN (SSN Holder)</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">ITIN</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">IRS Return Filing</span>
+      <span style="font-size:13px;font-weight:600;padding:8px 16px;background:var(--gray-50);border:1px solid var(--border);border-radius:50px;color:var(--gray-700)">Extension Form Filling</span>
+  </div>
+</div>
+</section>
+
+
+<!-- BONUS EDUCATIONAL CONTENT -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="label center">Bonus</div>
+    <h2 class="center">How to open a US bank account as a non-resident</h2>
+    <p class="sub center" style="max-width:580px;margin:0 auto 0;">Use it for Shopify, Facebook Ads, Google Ads — without paying currency conversion fees every time.</p>
+    <div class="vid-single" style="margin-top:28px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/644GQThGFrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </div>
+</section>
+<!-- ABOUT + SOCIAL -->
+<section style="background:var(--gray-50)">
+  <div class="wrap center">
+    <div class="label">About</div>
+    <h2>Smart Biz Owner &amp; Smart LLC Setup</h2>
+    <p class="sub" style="max-width:580px;margin:0 auto 0">Led by <strong>Mayank Malik</strong>, the team behind <strong>Smart Biz Owner</strong> has helped over 500+ global entrepreneurs set up their US businesses seamlessly.</p>
+    <p class="sub" style="max-width:580px;margin:16px auto 0"><strong>SmartLLCSetup.com</strong> is our brand new dedicated offering designed to make the LLC formation process as easy, intuitive, and transparent as possible. We are the exact same experienced team running SmartBizOwner.com, bringing you a streamlined service package so you can focus on building your business while we handle the compliance.</p>
+    <div class="social-row">
+      <a class="s-link" href="https://www.youtube.com/@mayankmalik5109" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#ff0000"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        Mayank's YouTube
+      </a>
+      <a class="s-link" href="https://www.instagram.com/mayankmaliik/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#f09433"/><stop offset="50%" stop-color="#dc2743"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#ig)" d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.8C2.4 3.9 4 2.3 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zm0-2.2c-3.3 0-3.7 0-5 .1C3.3.2 1.2 2.3.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c.1 4.7 2.2 6.8 6.9 6.9 1.3.1 1.7.1 5 .1s3.7 0 5-.1c4.7-.1 6.8-2.2 6.9-6.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-4.7-2.2-6.7-6.9-6.9C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.9a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+        Mayank's Instagram
+      </a>
+      <a class="s-link" href="https://www.trustpilot.com/review/smartbizowner.com" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#00b67a"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.445l-7.416 3.968 1.48-8.279L0 9.306l8.332-1.151z"/></svg>
+        Trustpilot Reviews
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="cta-btm">
+  <div class="cta-inner">
+    <div class="label">Ready to start?</div>
+    <h2>Your US Business Starts Today</h2>
+    <p class="sub" style="margin-bottom:28px">Starts from $299. 48-hour delivery. 500+ clients served. Fully done for you.</p>
+    <div class="cta-stack">
+      <a class="btn-green" href="#pricing" style="font-size:16px;padding:16px 28px">Choose Your State &mdash; From $299 &rarr;</a>
+      <a class="btn-outline" href="https://wa.me/917566631566" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#374151"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Have a question? WhatsApp us
+      </a>
+    </div>
+    <p style="font-size:12px;color:var(--gray-400);margin-top:16px">&#128274; Stripe-secured &bull; 500+ LLCs delivered &bull; Since 2021</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="background:#111;color:#fff;padding:64px 20px 24px;border:none;overflow:hidden;">
+  <div class="wrap" style="max-width:1000px;display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 200px), 1fr));gap:32px;margin-bottom:48px;">
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Solutions</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./start-a-us-company.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Start a US Company</a>
+        <a href="./get-an-ein.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Get an EIN</a>
+        <a href="./us-bank-account.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">US Bank Account</a>
+        <a href="./stripe-shopify.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Stripe &amp; Shopify</a>
+        <a href="./itin.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">ITIN Application</a>
+        <a href="./us-paypal.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">US PayPal Setup</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">LLC Management</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./annual-renewal.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Annual Renewal</a>
+        <a href="./irs-return-filing.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">IRS Return Filing</a>
+        <a href="./maintain-llc.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Maintain Your LLC</a>
+        <a href="./llc-reinstatement.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Reinstatement</a>
+        <a href="./llc-closing.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Closing</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Compare States</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./wyoming-vs-delaware.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Wyoming vs Delaware</a>
+        <a href="./wyoming-vs-new-mexico.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Wyoming vs New Mexico</a>
+        <a href="./delaware-vs-florida.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Delaware vs Florida</a>
+        <a href="./texas-vs-colorado.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Texas vs Colorado</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Resources & Tools</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./index.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Home</a>
+        <a href="./llc-tax-estimator.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Tax Estimator</a>
+        <a href="#" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Blog</a>
+        <a href="#" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Guides</a>
+        <a href="https://wa.me/917566631566" target="_blank" rel="noopener" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Help Center</a>
+        <a href="./contact.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom-bar wrap" style="border-top:1px solid #333;padding-top:24px;padding-bottom:16px;font-size:12px;color:var(--gray-500);text-align:left;">
+    <div style="margin-bottom:12px;">&copy; 2026 Smart LLC Setup &amp; Smart Biz Owner. All rights reserved.</div>
+    <div class="footer-links" style="display:flex;justify-content:flex-start;gap:20px;flex-wrap:wrap;">
+      <a href="./privacy-policy.html" style="color:var(--gray-500);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-500)'">Privacy Policy</a>
+      <a href="./terms-of-service.html" style="color:var(--gray-500);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-500)'">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var nav = document.querySelector('nav');
+window.addEventListener('scroll', function(){
+  if(nav) nav.style.boxShadow = window.scrollY > 8 ? '0 1px 0 #e5e7eb' : 'none';
+});
+</script>
+</body>
+</html>
