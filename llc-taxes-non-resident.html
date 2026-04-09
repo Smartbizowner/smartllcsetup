@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US LLC Taxes For Non-US Resident | Smart Biz Owner</title>
+<meta name="description" content="Open a US LLC in 48 hours from anywhere. Starts from $299. EIN, registered agent, bank guidance — all included. 500+ LLCs delivered since 2021.">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;max-width:100vw;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6;-webkit-font-smoothing:antialiased;max-width:100vw;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ── TOKENS ── */
+:root{
+  --blue:#0947a6;
+  --green:#16a34a;
+  --green-d:#15803d;
+  --gold:#f59e0b;
+  --gray-50:#f9fafb;
+  --gray-100:#f3f4f6;
+  --gray-300:#d1d5db;
+  --gray-400:#9ca3af;
+  --gray-500:#6b7280;
+  --gray-700:#374151;
+  --gray-900:#111827;
+  --border:#e5e7eb;
+  --r:10px;
+  --max:720px;
+}
+
+/* ── UTILS ── */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.center{text-align:center}
+.label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px}
+h2{font-size:clamp(22px,5vw,32px);font-weight:800;letter-spacing:-0.02em;color:#111;line-height:1.2;margin-bottom:10px}
+.sub{font-size:15px;color:var(--gray-500);line-height:1.65;margin-bottom:0}
+hr{border:none;border-top:1px solid var(--border)}
+section{padding:64px 0;border-bottom:1px solid var(--border)}
+
+/* ── BUTTONS ── */
+.btn-green{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--green);color:#fff;
+  font-size:16px;font-weight:700;font-family:'Inter',sans-serif;
+  padding:15px 28px;border-radius:50px;border:none;cursor:pointer;
+  transition:background .18s;
+  box-shadow:0 2px 12px rgba(22,163,74,.2);
+  text-decoration:none;
+}
+.btn-green:hover{background:var(--green-d)}
+.btn-outline{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:#fff;color:var(--gray-700);
+  font-size:15px;font-weight:600;font-family:'Inter',sans-serif;
+  padding:14px 24px;border-radius:50px;border:1.5px solid var(--border);
+  cursor:pointer;transition:border-color .18s;text-decoration:none;
+}
+.btn-outline:hover{border-color:var(--gray-400)}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:99;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--border);
+  height:58px;
+  display:flex;align-items:center;
+  padding:0 20px;gap:10px;
+}
+.nav-logo{flex-shrink:0}
+.nav-logo img{height:30px;object-fit:contain}
+.nav-space{flex:1}
+.nav-wa{
+  display:flex;align-items:center;gap:6px;
+  background:#25D366;color:#fff;
+  font-size:13px;font-weight:600;
+  padding:8px 14px;border-radius:50px;
+  white-space:nowrap;transition:opacity .18s;
+}
+.nav-wa:hover{opacity:.88}
+.nav-wa svg{width:14px;height:14px;fill:#fff;flex-shrink:0}
+.nav-buy{
+  display:flex;align-items:center;
+  background:var(--green);color:#fff;
+  font-size:13px;font-weight:700;
+  padding:8px 16px;border-radius:50px;
+  white-space:nowrap;transition:background .18s;
+}
+.nav-buy:hover{background:var(--green-d)}
+
+/* ── HERO ── */
+.hero{
+  padding:56px 20px 52px;
+  border-bottom:1px solid var(--border);
+  text-align:center;
+}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  border:1px solid var(--border);
+  background:var(--gray-50);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-500);
+  padding:5px 14px;border-radius:50px;margin-bottom:24px;
+}
+.hero-pill-dot{width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.hero h1{
+  font-size:clamp(28px,7vw,48px);
+  font-weight:800;letter-spacing:-0.025em;
+  color:#111;line-height:1.1;
+  margin-bottom:16px;
+}
+.hero h1 span{color:var(--blue)}
+.hero-sub{
+  font-size:16px;color:var(--gray-500);
+  max-width:420px;margin:0 auto 32px;
+  line-height:1.65;
+}
+.hero-cta{
+  display:flex;flex-direction:column;gap:12px;
+  max-width:340px;margin:0 auto 28px;
+}
+.hero-trust{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  font-size:13px;color:var(--gray-400);flex-wrap:wrap;
+}
+.stars{display:flex;gap:2px}
+.star{color:var(--gold);font-size:13px}
+.hero-docs{
+  display:flex;justify-content:center;align-items:flex-end;gap:0;
+  margin-top:44px;
+}
+.hero-docs .d1{
+  width:180px;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:rotate(-5deg) translate(12px,8px);
+  z-index:1;position:relative;
+}
+.hero-docs .d2{
+  width:220px;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:rotate(2deg);
+  z-index:2;position:relative;
+}
+.hero-docs img{width:100%;display:block}
+
+/* ── PROOF STRIP ── */
+.proof{
+  background:var(--gray-50);
+  border-bottom:1px solid var(--border);
+  padding:28px 20px;
+}
+.proof-inner{
+  max-width:680px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:8px;text-align:center;
+}
+.p-num{font-size:24px;font-weight:800;letter-spacing:-0.02em;color:#111}
+.p-lbl{font-size:11px;color:var(--gray-400);margin-top:2px;font-weight:500}
+
+
+/* ── WHAT YOU GET ── */
+.get-list{
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.get-row{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:18px 20px;border-bottom:1px solid var(--border);
+}
+.get-row:last-child{border-bottom:none}
+.get-icon{
+  width:20px;height:20px;border-radius:5px;
+  background:rgba(0,0,0,.04);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+.get-icon svg{width:11px;height:11px;stroke:#111;stroke-width:2.5;fill:none}
+.get-row strong{display:block;font-size:14px;font-weight:600;margin-bottom:2px}
+.get-row span{font-size:13px;color:var(--gray-500)}
+
+/* ── WHY ── */
+.why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.why-cell{background:#fff;padding:28px 22px}
+.why-num{font-size:26px;font-weight:800;letter-spacing:-0.02em;color:var(--blue);margin-bottom:6px}
+.why-title{font-size:14px;font-weight:600;color:#111;margin-bottom:5px}
+.why-text{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── PROCESS ── */
+.proc-list{
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;margin-top:36px;
+}
+.proc-row{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:22px 20px;border-bottom:1px solid var(--border);
+}
+.proc-row:last-child{border-bottom:none}
+.proc-n{
+  width:32px;height:32px;border-radius:50%;
+  background:#111;color:#fff;
+  font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.proc-row strong{display:block;font-size:14px;font-weight:700;margin-bottom:3px}
+.proc-row span{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── PRICING ── */
+.price-card{
+  border:2px solid #111;border-radius:var(--r);
+  padding:36px 32px;
+  max-width:440px;margin:36px auto 0;
+  text-align:left;
+}
+.price-amt{font-size:52px;font-weight:800;letter-spacing:-0.04em;color:#111;line-height:1;margin-bottom:4px}
+.price-amt sup{font-size:24px;vertical-align:super;letter-spacing:0;font-weight:700}
+.price-note{font-size:13px;color:var(--gray-500);margin-bottom:24px}
+.price-features{display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
+.pf{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--gray-700)}
+.pf svg{width:13px;height:13px;stroke:#111;stroke-width:2.5;fill:none;flex-shrink:0}
+.btn-buy{
+  display:flex;align-items:center;justify-content:center;width:100%;
+  background:var(--green);color:#fff;
+  font-size:16px;font-weight:700;font-family:'Inter',sans-serif;
+  padding:16px;border-radius:50px;border:none;cursor:pointer;
+  text-decoration:none;transition:background .18s;
+}
+.btn-buy:hover{background:var(--green-d)}
+.secure{text-align:center;font-size:12px;color:var(--gray-400);margin-top:10px}
+.texas{text-align:center;margin-top:14px;font-size:13px;color:var(--gray-500)}
+.texas a{color:var(--blue);font-weight:600;text-decoration:underline}
+
+/* ── REVIEWS ── */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.r-card{border:1px solid var(--border);border-radius:var(--r);padding:22px}
+.r-stars{display:flex;gap:2px;margin-bottom:10px}
+.r-star{color:var(--gold);font-size:13px}
+.r-name{font-size:13px;font-weight:700;margin-bottom:3px}
+.r-badge{display:inline-block;font-size:10px;font-weight:600;background:#eff6ff;color:var(--blue);padding:2px 6px;border-radius:4px;margin-left:5px}
+.r-title{font-size:13px;font-weight:600;margin-bottom:5px}
+.r-text{font-size:13px;color:var(--gray-500);line-height:1.6}
+
+/* ── VIDEOS ── */
+.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.vid-wrap{border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;border:1px solid var(--border)}
+.vid-wrap iframe{width:100%;height:100%;display:block;border:none}
+.vid-single{margin-top:24px;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;border:1px solid var(--border)}
+.vid-single iframe{width:100%;height:100%;display:block;border:none}
+.vid-label{font-size:14px;font-weight:600;margin-bottom:6px;margin-top:28px}
+.vid-sub{font-size:13px;color:var(--gray-500);margin-bottom:0}
+
+/* ── SOCIAL LINKS ── */
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.s-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:500;color:var(--gray-700);
+  border:1px solid var(--border);padding:9px 18px;border-radius:50px;
+  transition:border-color .18s;
+}
+.s-link:hover{border-color:var(--gray-400)}
+.s-link svg{width:15px;height:15px;flex-shrink:0}
+
+/* ── CTA BOTTOM ── */
+.cta-btm{padding:72px 20px;text-align:center;border-bottom:none}
+.cta-btm .cta-inner{max-width:420px;margin:0 auto}
+.cta-btm h2{margin-bottom:10px}
+.cta-btm .sub{margin-bottom:28px}
+.cta-stack{display:flex;flex-direction:column;gap:12px}
+
+/* ── STATES ── */
+.states-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
+.s-chip{font-size:13px;font-weight:500;color:var(--gray-700);background:var(--gray-50);border:1px solid var(--border);padding:7px 16px;border-radius:50px}
+.s-chip.hot{color:var(--blue);background:#eff6ff;border-color:#bfdbfe;font-weight:600}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:24px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer img{height:24px}
+.footer-r{font-size:12px;color:var(--gray-400)}
+.footer-r a{color:var(--gray-400)}
+
+/* ── WA FLOAT ── */
+.wa-float{
+  position:fixed;bottom:20px;right:20px;z-index:200;
+  width:50px;height:50px;border-radius:50%;
+  background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(37,211,102,.4);
+  transition:transform .18s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:25px;height:25px;fill:#fff}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  nav{padding:0 14px;gap:8px}
+  .nav-wa span{display:none}
+  .nav-wa{padding:8px 12px}
+  .nav-buy{padding:8px 14px;font-size:12px}
+  .hero{padding:44px 16px 40px}
+  .hero h1{font-size:30px}
+  .hero-sub{font-size:15px}
+  .hero-cta{max-width:100%}
+  .hero-docs{display:none}
+  .proof-inner{grid-template-columns:repeat(2,1fr);gap:16px}
+  section{padding:48px 0}
+  .why-grid{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .vid-grid{grid-template-columns:1fr}
+  .price-card{padding:24px 20px}
+  footer{flex-direction:column;align-items:stretch}
+  footer .wrap {width: 100%;}
+  .btn-green,.btn-outline,.btn-buy{font-size:15px;padding:15px 20px}
+}
+
+/* ── FOOTER MOBILE FIX ── */
+@media(max-width:768px){
+  footer .wrap>div{text-align:left !important}
+  footer .wrap>div>div{align-items:flex-start !important}
+  .footer-bottom-bar{text-align:left !important; padding-left:0 !important; padding-right:0 !important;}
+  .footer-bottom-bar .footer-links{justify-content:flex-start !important;flex-wrap:wrap;}
+}
+</style>
+
+<style>
+.article-wrap { max-width:800px; margin:0 auto; padding:64px 20px; }
+.article-wrap h2 { font-size:28px; line-height:1.2; margin-top:40px; margin-bottom:16px; color:#111; font-weight:800; letter-spacing:-0.02em; }
+.article-wrap h3 { font-size:20px; font-weight:700; margin-top:32px; margin-bottom:12px; color:#111; }
+.article-wrap p, .article-wrap li { font-size:16px; color:var(--gray-700); line-height:1.75; margin-bottom:16px; }
+.article-wrap ul { margin-bottom:24px; padding-left:24px; }
+.article-wrap ol { margin-bottom:24px; padding-left:24px; }
+.article-wrap ol li { margin-bottom:12px; }
+.article-wrap .alert { background:var(--gray-50); border-left:4px solid var(--blue); padding:16px 24px; margin:24px 0; border-radius:4px; }
+.article-wrap .alert strong { color:#111; }
+</style>
+
+</head>
+<body>
+
+<!-- FLOAT WA -->
+<a class="wa-float" href="https://wa.me/917566631566" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="./index.html" class="nav-logo"><img src="./logo.png" alt="Smart LLC Setup"></a>
+  <div class="nav-space"></div>
+  <a class="nav-wa" href="https://wa.me/917566631566" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a class="nav-buy" href="#pricing">Get Started &mdash; From $299</a>
+</nav>
+
+<section style="background:#f9fafb;padding:64px 20px;border-bottom:1px solid var(--border);">
+  <div class="wrap center">
+    <div class="label">US Taxation</div>
+    <h1 style="font-size:clamp(26px,5vw,42px);font-weight:800;margin-bottom:12px;">US LLC Taxes For Non-US Resident</h1>
+    <p class="sub" style="max-width:680px;margin:0 auto;">Understand the tax advantages of a US-based LLC for foreign entrepreneurs and how to handle annual filings.</p>
+  </div>
+</section>
+
+<section class="article-wrap">
+  <h2>US LLC – A Potential Tax Haven For Foreigners. Why?</h2>
+  <p>A US-based LLC can have great tax advantages, especially for foreign entrepreneurs abroad.</p>
+  <p>An LLC is a pass-through tax entity. What this means is that the LLC is not taxed directly. Instead, the profits and losses of the business pass through to its owners, who report them on their personal tax returns.</p>
+
+  <h3>Tax-free LLC income for foreign owners of a US LLC</h3>
+  <p>A little-known fact is that the US can be one of the biggest tax havens in the world. A US LLC opened by a non-US citizen or nonresident can arguably allow for earnings that are not taxed in the US.</p>
+  <p>Of course, specific rules apply to avoid LLC taxes.</p>
+  <p>Effectively, foreigners are only subject to US tax if they are “engaged in a trade or business in the United States” (ETOB). If your business is <strong>not</strong> ETOB, even if it generates income in the US, the income is not taxed in the US.</p>
+  
+  <div class="alert">
+    <strong>However, you are engaged in a trade or business (ETOB) in the US if:</strong>
+    <ol style="margin-bottom:0;margin-top:12px;">
+      <li>You have at least one “dependent agent” in the US, which are employees or companies that work for you almost exclusively, and</li>
+      <li>This dependent agent does something substantial to further your business in the US, as opposed to something purely administrative, or</li>
+      <li>You are engaged in “considerable, continuous, and regular” business in the US.</li>
+    </ol>
+  </div>
+  
+  <p>If you meet these conditions, you have to pay on those earnings. We analyze the bank statements and nature of the business to confirm whether it is ETOB or NON-ETOB.</p>
+
+  <h2>What to file, and how much it costs (SBO US Certified CPA)</h2>
+  <p>You will transfer all profits and losses of the business to your personal tax return in whichever country you are in. For example, you will file an ITR in India for your earnings.</p>
+  <p><strong>But still, you have to pay specific fees in the US to keep your LLC in good standing and active.</strong></p>
+
+  <h3>Annual Fees Breakdown</h3>
+  <div style="overflow-x:auto;margin-bottom:32px;">
+    <table style="width:100%;border-collapse:collapse;font-size:14px;text-align:left;">
+      <thead>
+        <tr style="background:var(--gray-50);border-bottom:2px solid var(--border);">
+          <th style="padding:12px;border:1px solid var(--border);">State</th>
+          <th style="padding:12px;border:1px solid var(--border);">State Annual Fee</th>
+          <th style="padding:12px;border:1px solid var(--border);">Agent Address (Outside Agent)</th>
+          <th style="padding:12px;border:1px solid var(--border);">Federal IRS Fee</th>
+          <th style="padding:12px;border:1px solid var(--border);">CPA + IRS Filing (&lt;$100k)</th>
+          <th style="padding:12px;border:1px solid var(--border);">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:12px;border:1px solid var(--border);font-weight:600;">Wyoming</td>
+          <td style="padding:12px;border:1px solid var(--border);">$60</td>
+          <td style="padding:12px;border:1px solid var(--border);">$25</td>
+          <td style="padding:12px;border:1px solid var(--border);">$150</td>
+          <td style="padding:12px;border:1px solid var(--border);">$75</td>
+          <td style="padding:12px;border:1px solid var(--border);font-weight:700;color:var(--green-d);">$310</td>
+        </tr>
+        <tr>
+          <td style="padding:12px;border:1px solid var(--border);font-weight:600;">Delaware</td>
+          <td style="padding:12px;border:1px solid var(--border);">$300</td>
+          <td style="padding:12px;border:1px solid var(--border);">$50</td>
+          <td style="padding:12px;border:1px solid var(--border);">$150</td>
+          <td style="padding:12px;border:1px solid var(--border);">$75</td>
+          <td style="padding:12px;border:1px solid var(--border);font-weight:700;color:var(--green-d);">$575</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Accounting + IRS Filing Fee For Different Revenues</h3>
+  <ul>
+    <li>Under $300,000 = <strong>$120</strong></li>
+    <li>Under $500,000 = <strong>$150</strong></li>
+    <li>Under $1,000,000 = <strong>$250</strong></li>
+  </ul>
+
+  <h3>Documents we need to handle your US taxation:</h3>
+  <ul>
+    <li><strong>Company Bank Statements</strong></li>
+    <li><strong>Owner Drawings:</strong> These are assets you withdraw from your business for your personal use.</li>
+    <li><strong>Owner Investments:</strong> Any capital you personally invested into the business.</li>
+    <li><strong>1099 Form:</strong> If any is received or issued (can be found on the company portal). A 1099 Form is a federal income tax form; businesses must file a 1099 form with the IRS.</li>
+  </ul>
+  
+  <p>That's it; if we need anything more, we will contact you.</p>
+
+  <div style="margin-top:48px;padding:32px;border:1px solid var(--border);border-radius:var(--r);background:var(--gray-50);text-align:center;">
+    <h3 style="margin-top:0;margin-bottom:16px;">Ready to start your US taxation with SBO?</h3>
+    <p style="margin-bottom:24px;color:var(--gray-700);">Contact us on Skype or WhatsApp with the above documents, and we will get it sorted.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/917566631566?text=Hello%2C%20I%20need%20help%20with%20the%20facebook%20solution%20setup.%20" target="_blank" rel="noopener" class="btn-green" style="padding:12px 24px;">Message on WhatsApp</a>
+      <a href="https://join.skype.com/invite/oGxE9jjpZFyQ" target="_blank" rel="noopener" class="btn-outline" style="padding:12px 24px;">Join Mayank on Skype</a>
+    </div>
+    <div style="margin-top:20px;">
+      <a href="https://www.instagram.com/mayankmaliik/" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;font-size:14px;font-weight:500;">Follow Mayank Malik on Instagram</a>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer style="background:#111;color:#fff;padding:64px 20px 24px;border:none;overflow:hidden;">
+  <div class="wrap" style="max-width:1000px;display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 200px), 1fr));gap:32px;margin-bottom:48px;">
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Solutions</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./start-a-us-company.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Start a US Company</a>
+        <a href="./get-an-ein.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Get an EIN</a>
+        <a href="./us-bank-account.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">US Bank Account</a>
+        <a href="./stripe-shopify.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Stripe &amp; Shopify</a>
+        <a href="./itin.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">ITIN Application</a>
+        <a href="./us-paypal.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">US PayPal Setup</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">LLC Management</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./annual-renewal.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Annual Renewal</a>
+        <a href="./irs-return-filing.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">IRS Return Filing</a>
+        <a href="./maintain-llc.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Maintain Your LLC</a>
+        <a href="./llc-reinstatement.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Reinstatement</a>
+        <a href="./llc-closing.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Closing</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Compare States</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./wyoming-vs-delaware.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Wyoming vs Delaware</a>
+        <a href="./wyoming-vs-new-mexico.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Wyoming vs New Mexico</a>
+        <a href="./delaware-vs-florida.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Delaware vs Florida</a>
+        <a href="./texas-vs-colorado.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Texas vs Colorado</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:16px;">Resources & Tools</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="./index.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Home</a>
+        <a href="./llc-tax-estimator.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">LLC Tax Estimator</a>
+        <a href="#" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Blog</a>
+        <a href="#" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Guides</a>
+        <a href="https://wa.me/917566631566" target="_blank" rel="noopener" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Help Center</a>
+        <a href="./contact.html" style="font-size:13px;color:var(--gray-400);transition:color .2s;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-400)'">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom-bar wrap" style="border-top:1px solid #333;padding-top:24px;padding-bottom:16px;font-size:12px;color:var(--gray-500);text-align:left;">
+    <div style="margin-bottom:12px;">&copy; 2026 Smart LLC Setup &amp; Smart Biz Owner. All rights reserved.</div>
+    <div class="footer-links" style="display:flex;justify-content:flex-start;gap:20px;flex-wrap:wrap;">
+      <a href="./privacy-policy.html" style="color:var(--gray-500);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-500)'">Privacy Policy</a>
+      <a href="./terms-of-service.html" style="color:var(--gray-500);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--gray-500)'">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var nav = document.querySelector('nav');
+window.addEventListener('scroll', function(){
+  if(nav) nav.style.boxShadow = window.scrollY > 8 ? '0 1px 0 #e5e7eb' : 'none';
+});
+</script>
+</body>
+</html>
