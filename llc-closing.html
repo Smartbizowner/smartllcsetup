@@ -361,7 +361,28 @@ footer img{height:24px}
 .contact-form .form-note { font-size:12px; color:var(--gray-500); text-align:center; margin-top:14px; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -391,63 +412,238 @@ footer img{height:24px}
 <section class="article-wrap">
   <h2>Why Formal Dissolution Matters</h2>
   <p>If you're done with your US LLC, you can't simply stop using it and hope it goes away. Unless you formally dissolve the entity, you remain on the hook for:</p>
-  <ul>
-    <li>Annual state reports and renewal fees (even if you have zero revenue)</li>
-    <li>Registered agent fees, every year</li>
-    <li>Franchise taxes in states like Delaware and California</li>
-    <li>IRS Form 5472 + Pro Forma 1120 filings — with <strong>$25,000 penalties</strong> for missing them</li>
-    <li>Compounding late fees and penalties as those obligations pile up</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
 
-  <div class="warn">
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Annual state reports and renewal fees (even if you have zero revenue)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Registered agent fees, every year</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Franchise taxes in states like Delaware and California</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>$25,000 penalties</strong>
+        <span>for missing them</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Compounding late fees and penalties as those obligations pile up</span>
+      </div>
+    </div>
+</div>
+
+  <div class="tax-highlight" style="margin:32px 0;">
     <strong>Letting it "just die" is expensive.</strong> Without formal dissolution, the obligations keep accruing. You may think the LLC is gone, but the state and the IRS still see it as active — and the bill keeps growing until you clean it up with a reinstatement-then-dissolution process that costs far more than doing it right now.
   </div>
 
   <h2>When Should You Dissolve?</h2>
   <p>Formal dissolution is the right move if any of the following applies:</p>
-  <ul>
-    <li>You're no longer using the LLC for any business activity</li>
-    <li>You've pivoted to a different entity or country</li>
-    <li>The business didn't work out and you want to stop the annual costs</li>
-    <li>You're consolidating multiple LLCs into one</li>
-    <li>You want to cleanly retire the company name and EIN</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">You're no longer using the LLC for any business activity</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">You've pivoted to a different entity or country</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">The business didn't work out and you want to stop the annual costs</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">You're consolidating multiple LLCs into one</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">You want to cleanly retire the company name and EIN</span>
+      </div>
+    </div>
+</div>
 
   <h2>The Dissolution Process</h2>
   <p>Properly closing an LLC takes more than one filing. Here's what we handle for you:</p>
-  <ol>
-    <li><strong>Status check:</strong> We verify the LLC is in good standing first (if it's not, we handle reinstatement first — required in most states before dissolution).</li>
-    <li><strong>Member authorization:</strong> Prepare the required written consent from members to dissolve the LLC.</li>
-    <li><strong>File Articles of Dissolution:</strong> The official document filed with the Secretary of State that ends the LLC's legal existence.</li>
-    <li><strong>Cancel registered agent:</strong> Terminate the registered agent appointment to stop future billing.</li>
-    <li><strong>Close state accounts:</strong> Handle any final state obligations (franchise tax account closures, etc.).</li>
-    <li><strong>Final IRS filing guidance:</strong> Advise on the final Form 5472 + 1120 filing marked "Final" — required in the year of dissolution.</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>Status check:</strong>
+        <span>We verify the LLC is in good standing first (if it's not, we handle reinstatement first — required in most states before dissolution).</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>Member authorization:</strong>
+        <span>Prepare the required written consent from members to dissolve the LLC.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>File Articles of Dissolution:</strong>
+        <span>The official document filed with the Secretary of State that ends the LLC's legal existence.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Cancel registered agent:</strong>
+        <span>Terminate the registered agent appointment to stop future billing.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <strong>Close state accounts:</strong>
+        <span>Handle any final state obligations (franchise tax account closures, etc.).</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">6</div>
+      <div>
+        <strong>Final IRS filing guidance:</strong>
+        <span>Advise on the final Form 5472 + 1120 filing marked "Final" — required in the year of dissolution.</span>
+      </div>
+    </div>
+</div>
 
   <h2>Our LLC Closing Service</h2>
   <div class="pricing-card">
     <div class="price">$100<span style="font-size:18px;color:var(--gray-500);font-weight:600;">&nbsp;flat fee</span></div>
     <div class="price-sub">LLC dissolution &amp; closing service</div>
-    <ul style="padding-left:20px;">
-      <li>Preparation of Articles of Dissolution</li>
-      <li>Filing with the Secretary of State</li>
-      <li>Member consent documentation</li>
-      <li>Registered agent cancellation</li>
-      <li>State account closure</li>
-      <li>Final filing guidance (Form 5472/1120 final year)</li>
-      <li>Official dissolution certificate sent to you</li>
-    </ul>
+    <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Preparation of Articles of Dissolution</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Filing with the Secretary of State</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Member consent documentation</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Registered agent cancellation</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">State account closure</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Final filing guidance (Form 5472/1120 final year)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Official dissolution certificate sent to you</span>
+      </div>
+    </div>
+</div>
     <p style="font-size:14px;color:var(--gray-500);margin-top:16px;margin-bottom:0;"><strong>Note:</strong> State dissolution filing fees are separate and paid directly to the state. These are typically $0-$100 depending on the state (Wyoming: $60, Delaware: $200, New Mexico: $25).</p>
   </div>
 
   <h2>What We Need From You</h2>
-  <ol>
-    <li>Your LLC name and state of formation</li>
-    <li>EIN (Tax ID number)</li>
-    <li>Current member information</li>
-    <li>Confirmation that all US business activity has stopped</li>
-    <li>Copy of your passport (for verification)</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Your LLC name and state of formation</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">EIN (Tax ID number)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Current member information</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Confirmation that all US business activity has stopped</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Copy of your passport (for verification)</span>
+      </div>
+    </div>
+</div>
 
   <h2>Common Questions</h2>
 

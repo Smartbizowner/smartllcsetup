@@ -361,7 +361,28 @@ footer img{height:24px}
 .contact-form .form-note { font-size:12px; color:var(--gray-500); text-align:center; margin-top:14px; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -391,13 +412,48 @@ footer img{height:24px}
 <section class="article-wrap">
   <h2>Why Maintenance Matters</h2>
   <p>The liability shield your LLC provides isn't automatic. Courts can "pierce the corporate veil" if you fail to maintain proper separation between yourself and your business. Done right, ongoing maintenance gives you:</p>
-  <ul>
-    <li><strong>Asset protection</strong> from business debts and lawsuits</li>
-    <li><strong>Good standing</strong> with state regulators</li>
-    <li><strong>Preserved business opportunities</strong> for contracts, partnerships, and payment processors</li>
-    <li><strong>Cleaner tax records</strong> and accounting</li>
-    <li><strong>Enhanced credibility</strong> with clients, suppliers, and banks</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Asset protection</strong>
+        <span>from business debts and lawsuits</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Good standing</strong>
+        <span>with state regulators</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Preserved business opportunities</strong>
+        <span>for contracts, partnerships, and payment processors</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Cleaner tax records</strong>
+        <span>and accounting</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Enhanced credibility</strong>
+        <span>with clients, suppliers, and banks</span>
+      </div>
+    </div>
+</div>
 
   <h2>Separating Personal and Business Finances</h2>
   <p>This is the single most important maintenance task. Mixing personal and business money is the #1 reason courts disregard LLC protection.</p>
@@ -411,7 +467,7 @@ footer img{height:24px}
   <h3>Pay Yourself Properly</h3>
   <p>Don't withdraw money ad hoc. Document distributions in your records and follow your Operating Agreement guidelines.</p>
 
-  <div class="warn">
+  <div class="tax-highlight" style="margin:32px 0;">
     <strong>Avoid at all costs:</strong> Paying personal bills from business accounts, depositing business income into personal accounts, using business funds for personal expenses, or letting family members access the business account.
   </div>
 
@@ -419,47 +475,172 @@ footer img{height:24px}
   <p>Maintain these documents organized and accessible for at least <strong>seven years</strong>:</p>
 
   <h3>Formation Documents</h3>
-  <ul>
-    <li>Articles of Organization</li>
-    <li>Operating Agreement</li>
-    <li>EIN confirmation letter (IRS CP 575)</li>
-    <li>State certificates and filing receipts</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Articles of Organization</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Operating Agreement</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">EIN confirmation letter (IRS CP 575)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">State certificates and filing receipts</span>
+      </div>
+    </div>
+</div>
 
   <h3>Meeting &amp; Decision Records</h3>
-  <ul>
-    <li>Meeting minutes (yes, even single-member LLCs should keep these)</li>
-    <li>Resolutions for major decisions</li>
-    <li>Member and manager voting records</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Meeting minutes (yes, even single-member LLCs should keep these)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Resolutions for major decisions</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Member and manager voting records</span>
+      </div>
+    </div>
+</div>
 
   <h3>Financial Records</h3>
-  <ul>
-    <li>Bank statements</li>
-    <li>Tax returns (Form 5472 + 1120 copies)</li>
-    <li>Receipts and invoices</li>
-    <li>Contracts and agreements</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Bank statements</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Tax returns (Form 5472 + 1120 copies)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Receipts and invoices</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Contracts and agreements</span>
+      </div>
+    </div>
+</div>
 
   <h3>Compliance Records</h3>
-  <ul>
-    <li>Annual report filings</li>
-    <li>Business license copies</li>
-    <li>Registered agent correspondence</li>
-    <li>State communications</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Annual report filings</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Business license copies</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Registered agent correspondence</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">State communications</span>
+      </div>
+    </div>
+</div>
 
   <h2>Annual Compliance Checklist</h2>
   <p>Every year, a foreign-owned US LLC needs to complete the following:</p>
-  <ol>
-    <li><strong>File your state annual report</strong> (e.g. Wyoming — due in your anniversary month)</li>
-    <li><strong>Renew your registered agent</strong> (required by law in every state)</li>
-    <li><strong>File Form 5472 + Pro Forma 1120</strong> with the IRS by April 15 — even with zero revenue</li>
-    <li><strong>Reconcile your books</strong> and keep clean records of all transactions</li>
-    <li><strong>Verify state records</strong> — make sure your address, agent, and member info are still accurate</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
 
-  <div class="alert">
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>File your state annual report</strong>
+        <span>(e.g. Wyoming — due in your anniversary month)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>Renew your registered agent</strong>
+        <span>(required by law in every state)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>File Form 5472 + Pro Forma 1120</strong>
+        <span>with the IRS by April 15 — even with zero revenue</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Reconcile your books</strong>
+        <span>and keep clean records of all transactions</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <strong>Verify state records</strong>
+        <span>make sure your address, agent, and member info are still accurate</span>
+      </div>
+    </div>
+</div>
+
+  <div class="glass-box" style="margin:32px 0;">
     <strong>Simple math for Wyoming LLCs:</strong> $160/year state + agent renewal + $170/year IRS filing = <strong>$330 total annual compliance cost</strong>. That's the full cost of keeping your US LLC alive and in good standing.
   </div>
 
@@ -479,16 +660,64 @@ footer img{height:24px}
   <p>Don't use the LLC to defraud creditors, misrepresent dealings, or intentionally undercapitalize to evade debts.</p>
 
   <h2>Common Mistakes to Avoid</h2>
-  <ul>
-    <li>Mixing personal and business finances (the #1 liability risk)</li>
-    <li>Operating without a signed Operating Agreement</li>
-    <li>Missing annual report deadlines</li>
-    <li>Ignoring registered agent notices</li>
-    <li>Skipping Form 5472 filing because the LLC "had no revenue"</li>
-    <li>Failing to update member information after changes</li>
-    <li>Not documenting major business decisions in writing</li>
-    <li>Operating in other US states without proper registration</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Mixing personal and business finances (the #1 liability risk)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Operating without a signed Operating Agreement</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Missing annual report deadlines</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Ignoring registered agent notices</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Skipping Form 5472 filing because the LLC "had no revenue"</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Failing to update member information after changes</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Not documenting major business decisions in writing</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Operating in other US states without proper registration</span>
+      </div>
+    </div>
+</div>
 
   <h2>Frequently Asked Questions</h2>
 

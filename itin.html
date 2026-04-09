@@ -343,7 +343,28 @@ footer img{height:24px}
 .article-wrap .alert strong { color:#111; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -372,31 +393,109 @@ footer img{height:24px}
 
 <section class="article-wrap">
   <h2>Required Documents and Information</h2>
-  <ul>
-    <li>LLC Documents</li>
-    <li>EIN Letter - 147-C</li>
-    <li>High Quality Scanned Passport - Via Xerox shop or Adobe Scan</li>
-    <li>Proof of ownership certificate - If multi-member company</li>
-    <li>Home address (completed with Zip code) - Same on the documents and passport</li>
-    <li>Phone number - Preferrable US number to receive calls from the IRS</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">LLC Documents</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">EIN Letter - 147-C</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">High Quality Scanned Passport - Via Xerox shop or Adobe Scan</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Proof of ownership certificate - If multi-member company</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Home address (completed with Zip code) - Same on the documents and passport</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Phone number - Preferrable US number to receive calls from the IRS</span>
+      </div>
+    </div>
+</div>
   
-  <div class="alert">
+  <div class="glass-box" style="margin:32px 0;">
     <strong>Important note:</strong><br>
     - ITIN Application Product is only for having a US company as owner or shareholder as a Non-U.S. citizen.<br>
     - Once you order your ITIN, our information request form will be sent to you to fill out to process your order.
   </div>
 
   <h2>Steps to Apply</h2>
-  <ol>
-    <li>Payment</li>
-    <li>Filling the information request form</li>
-    <li>Online passport verification</li>
-    <li>We will prepare your application form</li>
-    <li>You will sign the form that we will prepare, and send back to us via e-mail</li>
-    <li>We will submit your signed application form and documents to the IRS</li>
-    <li>We will notify you after your result is received</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Payment</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Filling the information request form</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Online passport verification</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">We will prepare your application form</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">You will sign the form that we will prepare, and send back to us via e-mail</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">6</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">We will submit your signed application form and documents to the IRS</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">7</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">We will notify you after your result is received</span>
+      </div>
+    </div>
+</div>
 
   <h2>Time Required to process ITIN</h2>
   <p>ITIN processing time depends on IRS processing time exactly. ITIN currently takes 12-14 weeks. This information varies on IRS processing time.</p>

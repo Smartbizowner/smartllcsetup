@@ -361,7 +361,28 @@ footer img{height:24px}
 .contact-form .form-note { font-size:12px; color:var(--gray-500); text-align:center; margin-top:14px; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -389,7 +410,7 @@ footer img{height:24px}
 </section>
 
 <section class="article-wrap">
-  <div class="warn">
+  <div class="tax-highlight" style="margin:32px 0;">
     <strong>Heads up — it's tax filing season.</strong> Your US LLC must file with the IRS by the deadline. As a foreign-owned US LLC, you're required to submit Form 5472 + Pro Forma 1120 every year. This applies even if your company had zero revenue. Not filing triggers a <strong>$25,000 penalty</strong> directly from the IRS.
   </div>
 
@@ -397,17 +418,41 @@ footer img{height:24px}
   <p>Every Single-Member US LLC with a foreign owner is classified by the IRS as a "Disregarded Entity" (DE). Under IRS rules, every foreign-owned DE must file Form 5472 together with a Pro Forma Form 1120 every single year, regardless of whether your LLC had any income, transactions, or activity.</p>
 
   <p>This applies to you if:</p>
-  <ul>
-    <li>You are a non-US resident who owns 25% or more of a US LLC</li>
-    <li>Your LLC is a single-member LLC with a foreign owner</li>
-    <li>Your LLC had any "reportable transactions" during the year (including formation, capital contributions, or payments to you)</li>
-    <li>Your LLC had zero revenue — you STILL must file</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">You are a non-US resident who owns 25% or more of a US LLC</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Your LLC is a single-member LLC with a foreign owner</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Your LLC had any "reportable transactions" during the year (including formation, capital contributions, or payments to you)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Your LLC had zero revenue — you STILL must file</span>
+      </div>
+    </div>
+</div>
 
   <h2>The $25,000 Penalty</h2>
   <p>The IRS is unforgiving about Form 5472. The penalty for failing to file — or filing late, or filing incomplete information — is <strong>$25,000 per failure, per year</strong>. This is not a percentage of owed tax. It's a flat penalty that applies even when your tax liability is $0.</p>
 
-  <div class="alert">
+  <div class="glass-box" style="margin:32px 0;">
     <strong>Good news:</strong> For most non-US founders with no physical presence in the United States (the "Not ETBUS" rule), your actual US tax liability is $0. The filing itself is purely informational. But the filing is mandatory — and that's where we come in.
   </div>
 
@@ -421,26 +466,105 @@ footer img{height:24px}
   <div class="pricing-card">
     <div class="price">$170<span style="font-size:18px;color:var(--gray-500);font-weight:600;">/year</span></div>
     <div class="price-sub">Form 5472 + Pro Forma 1120 filing</div>
-    <ul style="padding-left:20px;">
-      <li>Prepared and filed by our experienced CPA</li>
-      <li>Covers both Form 5472 and the required Pro Forma 1120</li>
-      <li>Extension filing (Form 7004) included if needed</li>
-      <li>Direct IRS submission with confirmation</li>
-      <li>Support and answers on your tax position</li>
-    </ul>
+    <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Prepared and filed by our experienced CPA</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Covers both Form 5472 and the required Pro Forma 1120</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Extension filing (Form 7004) included if needed</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Direct IRS submission with confirmation</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Support and answers on your tax position</span>
+      </div>
+    </div>
+</div>
   </div>
 
   <h2>What We Need From You</h2>
   <p>To proceed with your IRS federal filing, we need the following information from your side:</p>
-  <ol>
-    <li><strong>Passport</strong> — a copy of the main page</li>
-    <li><strong>Country of tax residence</strong></li>
-    <li><strong>Percentage of ownership</strong> in the LLC</li>
-    <li><strong>Primary revenue sources</strong> (dropshipping, SaaS, freelance, agency, etc.)</li>
-    <li><strong>Payment processors used</strong> (Stripe, PayPal, Shopify Payments, Wise, etc.)</li>
-    <li><strong>Approximate breakdown by platform</strong> if you sell across multiple channels</li>
-    <li><strong>Bank statement of the last year</strong> for the LLC's business account</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>Passport</strong>
+        <span>a copy of the main page</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>Country of tax residence</strong>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>Percentage of ownership</strong>
+        <span>in the LLC</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Primary revenue sources</strong>
+        <span>(dropshipping, SaaS, freelance, agency, etc.)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <strong>Payment processors used</strong>
+        <span>(Stripe, PayPal, Shopify Payments, Wise, etc.)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">6</div>
+      <div>
+        <strong>Approximate breakdown by platform</strong>
+        <span>if you sell across multiple channels</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">7</div>
+      <div>
+        <strong>Bank statement of the last year</strong>
+        <span>for the LLC's business account</span>
+      </div>
+    </div>
+</div>
 
   <h2>Why Not File It Yourself?</h2>
   <p>Form 5472 and Pro Forma 1120 are not forms you can file on common DIY tax software like TurboTax. They must be paper-filed or e-filed through an authorized IRS provider. The instructions are dense, and a single mistake — wrong EIN placement, missed transaction, incomplete disclosure — can trigger the $25,000 penalty.</p>

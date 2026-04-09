@@ -329,6 +329,55 @@ footer img{height:24px}
   .footer-bottom-bar{text-align:left !important; padding-left:0 !important; padding-right:0 !important;}
   .footer-bottom-bar .footer-links{justify-content:flex-start !important;flex-wrap:wrap;}
 }
+
+/* ── COMPARISON CARDS ── */
+.comp-grid {
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;max-width:900px;margin-inline:auto;
+}
+@media(max-width:768px) {
+  .comp-grid { grid-template-columns:1fr; }
+}
+.state-card {
+  background:#fff;border:2px solid var(--border);border-radius:var(--r);padding:40px 32px;
+  position:relative;box-shadow:0 12px 32px rgba(0,0,0,.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.state-card:hover {
+  transform: translateY(-4px);
+  box-shadow:0 24px 48px rgba(0,0,0,.08);
+}
+.state-card.winner {
+  border-color:var(--blue);
+}
+.state-badge {
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--blue);color:#fff;font-size:12px;font-weight:700;padding:6px 16px;border-radius:50px;
+  text-transform:uppercase;letter-spacing:1px;
+}
+.state-name { font-size:32px;font-weight:800;color:#111;margin-bottom:8px;text-align:center;}
+.state-price { font-size:42px;font-weight:800;color:var(--blue);text-align:center;line-height:1;}
+.state-price span { font-size:16px;color:var(--gray-500);font-weight:500;}
+.state-features { margin-top:24px;display:flex;flex-direction:column;gap:16px; }
+.sf-row { display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--gray-700);line-height:1.5;}
+.sf-row svg { width:18px;height:18px;stroke:var(--green);stroke-width:2.5;flex-shrink:0;fill:none;margin-top:1px;}
+.sf-row.bad svg { stroke:#e11d48; }
+
+/* ── NEO/GLASS SECTIONS ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
 </style>
 
 </head>
@@ -347,7 +396,7 @@ footer img{height:24px}
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.133 1.535 5.867L.057 23.386a.5.5 0 00.612.612l5.54-1.477A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.127-1.415l-.367-.22-3.813 1.017 1.022-3.73-.24-.383A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
     <span>WhatsApp</span>
   </a>
-  <a class="nav-buy" href="#pricing">Get Started &mdash; From $299</a>
+  <a class="nav-buy" href="/index.html#pricing">Get Started &mdash; From $299</a>
 </nav>
 
 <!-- HERO -->
@@ -442,7 +491,7 @@ footer img{height:24px}
     <h2>Setup Your Private LLC Today</h2>
     <p class="sub" style="margin-bottom:28px">Form your LLC securely today and start processing global payments in 48 hours.</p>
     <div class="cta-stack">
-      <a class="btn-green" href="./index.html#pricing" style="font-size:16px;padding:16px 28px">Go to Checkout &mdash; Pick your state &rarr;</a>
+      <a class="btn-green" href="/index.html#pricing" style="font-size:16px;padding:16px 28px">Go to Checkout &mdash; Pick your state &rarr;</a>
       <a class="btn-outline" href="https://wa.me/917566631566" target="_blank" rel="noopener">Have a question? WhatsApp us</a>
     </div>
   </div>

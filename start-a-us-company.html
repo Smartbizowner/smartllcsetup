@@ -343,7 +343,28 @@ footer img{height:24px}
 .article-wrap .alert strong { color:#111; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -375,21 +396,77 @@ footer img{height:24px}
   <p>An LLC (Limited Liability Company) is a U.S. business structure that protects your personal assets (your house, car, personal bank accounts) from business debts and lawsuits. It separates you personally from the business entity, granting you peace of mind.</p>
   
   <h2>Why Form a US LLC?</h2>
-  <ul>
-    <li><strong>Limited Liability Protection:</strong> If the business faces a lawsuit or debt, your personal savings are entirely safe.</li>
-    <li><strong>Tax Benefits (Pass-Through Taxation):</strong> For non-US residents with no physical operations inside the USA (No ETBUS), the US LLC essentially acts as a tax-free vehicle (0% corporate tax, 0% personal tax).</li>
-    <li><strong>Global Credibility:</strong> Having a U.S. company adds massive credibility when dealing with global clients, suppliers, and investors.</li>
-    <li><strong>Payment Processing:</strong> Unlocking access to Tier-1 infrastructure like Stripe, PayPal, and US banking.</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Limited Liability Protection:</strong>
+        <span>If the business faces a lawsuit or debt, your personal savings are entirely safe.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Tax Benefits (Pass-Through Taxation):</strong>
+        <span>For non-US residents with no physical operations inside the USA (No ETBUS), the US LLC essentially acts as a tax-free vehicle (0% corporate tax, 0% personal tax).</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Global Credibility:</strong>
+        <span>Having a U.S. company adds massive credibility when dealing with global clients, suppliers, and investors.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Payment Processing:</strong>
+        <span>Unlocking access to Tier-1 infrastructure like Stripe, PayPal, and US banking.</span>
+      </div>
+    </div>
+</div>
   
   <h2>The Step-by-Step Formation Process</h2>
   <p>To successfully form and launch your US LLC, you must complete the following critical steps:</p>
-  <ol>
-    <li><strong>Choose a State:</strong> We highly recommend <a href="./wyoming-vs-delaware.html" style="color:var(--blue);text-decoration:underline;">Wyoming</a> for bootstrapped eCommerce/service businesses due to its unbeatable $60 annual fee and premier privacy.</li>
-    <li><strong>File Articles of Organization:</strong> This is the official document filed with the Secretary of State.</li>
-    <li><strong>Appoint a Registered Agent:</strong> A mandatory physical address in your state of formation that can receive legal documents on your behalf.</li>
-    <li><strong>Get an EIN (Tax ID):</strong> Required to open a bank account and operate the business.</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>Choose a State:</strong>
+        <span>We highly recommend <a href="./wyoming-vs-delaware.html" style="color:var(--blue);text-decoration:underline;">Wyoming</a> for bootstrapped eCommerce/service businesses due to its unbeatable $60 annual fee and premier privacy.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>File Articles of Organization:</strong>
+        <span>This is the official document filed with the Secretary of State.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>Appoint a Registered Agent:</strong>
+        <span>A mandatory physical address in your state of formation that can receive legal documents on your behalf.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Get an EIN (Tax ID):</strong>
+        <span>Required to open a bank account and operate the business.</span>
+      </div>
+    </div>
+</div>
   
   <div style="margin-top:48px;text-align:center;padding:32px;border:1px solid var(--border);border-radius:var(--r);background:#fff;box-shadow:0 8px 24px rgba(0,0,0,0.04);">
     <h3 style="margin-top:0;margin-bottom:12px;">Ready to launch your U.S. business?</h3>

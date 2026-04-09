@@ -361,7 +361,28 @@ footer img{height:24px}
 .contact-form .form-note { font-size:12px; color:var(--gray-500); text-align:center; margin-top:14px; }
 </style>
 
+
+<style>
+/* ── INJECTED PREMIUM UI ── */
+.glass-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--r);
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
+}
+.tax-highlight {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid var(--blue);
+  padding: 24px;
+  border-radius: 0 var(--r) var(--r) 0;
+  margin: 32px 0;
+}
+.tax-highlight strong, .tax-highlight h3 { color: #111; }
+</style>
 </head>
+
 <body>
 
 <!-- FLOAT WA -->
@@ -389,7 +410,7 @@ footer img{height:24px}
 </section>
 
 <section class="article-wrap">
-  <div class="warn">
+  <div class="tax-highlight" style="margin:32px 0;">
     <strong>Don't panic if your LLC was dissolved.</strong> Administrative dissolution is reversible in most states. The faster you act, the simpler and cheaper the reinstatement becomes — waiting too long can turn a fixable problem into a permanent one.
   </div>
 
@@ -399,33 +420,138 @@ footer img{height:24px}
 
   <h2>Why Does the State Dissolve an LLC?</h2>
   <p>States administratively dissolve LLCs for a handful of reasons, and they're almost always tied to compliance:</p>
-  <ul>
-    <li><strong>Missed annual reports</strong> — the #1 reason. After 1-2 years of missed filings, the state takes action.</li>
-    <li><strong>Unpaid state fees or franchise taxes</strong> — Delaware franchise tax is a common trigger.</li>
-    <li><strong>No registered agent on file</strong> — if your agent resigns and you don't appoint a new one, the state can dissolve the LLC.</li>
-    <li><strong>Failure to respond to state notices</strong> — if the state sends compliance warnings and gets no response.</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Missed annual reports</strong>
+        <span>the #1 reason. After 1-2 years of missed filings, the state takes action.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Unpaid state fees or franchise taxes</strong>
+        <span>Delaware franchise tax is a common trigger.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>No registered agent on file</strong>
+        <span>if your agent resigns and you don't appoint a new one, the state can dissolve the LLC.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Failure to respond to state notices</strong>
+        <span>if the state sends compliance warnings and gets no response.</span>
+      </div>
+    </div>
+</div>
 
   <h2>What Happens If You Don't Reinstate?</h2>
   <p>A dissolved LLC is not just an administrative issue — it has real consequences:</p>
-  <ul>
-    <li><strong>Loss of liability protection.</strong> If your LLC doesn't legally exist, your personal assets are no longer shielded from business lawsuits or debts.</li>
-    <li><strong>Payment processor freezes.</strong> Stripe, PayPal, and Shopify regularly verify business status. A dissolved LLC can trigger an account freeze and held funds.</li>
-    <li><strong>Bank account closure.</strong> Your US business bank may freeze or close your account once they learn of the dissolution.</li>
-    <li><strong>Inability to do business.</strong> You cannot legally sign contracts, sue, or conduct business under a dissolved entity.</li>
-    <li><strong>Name loss.</strong> If you wait too long, someone else can register your LLC's name.</li>
-  </ul>
+  <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Loss of liability protection.</strong>
+        <span>If your LLC doesn't legally exist, your personal assets are no longer shielded from business lawsuits or debts.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Payment processor freezes.</strong>
+        <span>Stripe, PayPal, and Shopify regularly verify business status. A dissolved LLC can trigger an account freeze and held funds.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Bank account closure.</strong>
+        <span>Your US business bank may freeze or close your account once they learn of the dissolution.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Inability to do business.</strong>
+        <span>You cannot legally sign contracts, sue, or conduct business under a dissolved entity.</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <strong>Name loss.</strong>
+        <span>If you wait too long, someone else can register your LLC's name.</span>
+      </div>
+    </div>
+</div>
 
   <h2>The Reinstatement Process</h2>
   <p>Reinstating a dissolved LLC is more than just paying a single fee. Here's what it actually involves:</p>
-  <ol>
-    <li><strong>Assessment:</strong> We check your LLC's current status with the state and identify exactly what's missing — back reports, unpaid fees, agent issues, etc.</li>
-    <li><strong>File all overdue annual reports:</strong> Every year you missed has to be filed retroactively. Most states require these before accepting a reinstatement application.</li>
-    <li><strong>Pay back fees and penalties:</strong> State filing fees for each year plus late penalties. These are paid directly to the state on your behalf.</li>
-    <li><strong>Submit the reinstatement application:</strong> A formal application to restore your LLC to active status, signed and submitted to the Secretary of State.</li>
-    <li><strong>Re-establish registered agent:</strong> If your agent resigned, we appoint a new one to satisfy state requirements.</li>
-    <li><strong>Confirmation of reinstatement:</strong> Once the state approves, we send you the official certificate showing your LLC is back in good standing.</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <strong>Assessment:</strong>
+        <span>We check your LLC's current status with the state and identify exactly what's missing — back reports, unpaid fees, agent issues, etc.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <strong>File all overdue annual reports:</strong>
+        <span>Every year you missed has to be filed retroactively. Most states require these before accepting a reinstatement application.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <strong>Pay back fees and penalties:</strong>
+        <span>State filing fees for each year plus late penalties. These are paid directly to the state on your behalf.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <strong>Submit the reinstatement application:</strong>
+        <span>A formal application to restore your LLC to active status, signed and submitted to the Secretary of State.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <strong>Re-establish registered agent:</strong>
+        <span>If your agent resigned, we appoint a new one to satisfy state requirements.</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">6</div>
+      <div>
+        <strong>Confirmation of reinstatement:</strong>
+        <span>Once the state approves, we send you the official certificate showing your LLC is back in good standing.</span>
+      </div>
+    </div>
+</div>
 
   <h2>Our LLC Reinstatement Service</h2>
   <p>We handle the entire reinstatement end-to-end. You provide the information, we do the paperwork and dealing with the state.</p>
@@ -433,15 +559,57 @@ footer img{height:24px}
   <div class="pricing-card">
     <div class="price">$290<span style="font-size:18px;color:var(--gray-500);font-weight:600;">&nbsp;flat fee</span></div>
     <div class="price-sub">Wyoming LLC reinstatement</div>
-    <ul style="padding-left:20px;">
-      <li>Status assessment with the Secretary of State</li>
-      <li>Preparation and filing of all overdue annual reports</li>
-      <li>Handling of back penalties and fee calculations</li>
-      <li>Reinstatement application preparation and submission</li>
-      <li>Registered agent reappointment (if needed)</li>
-      <li>Direct state communication throughout the process</li>
-      <li>Official reinstatement confirmation sent to you</li>
-    </ul>
+    <div class="get-list" style="margin-top:16px;margin-bottom:32px;">
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Status assessment with the Secretary of State</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Preparation and filing of all overdue annual reports</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Handling of back penalties and fee calculations</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Reinstatement application preparation and submission</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Registered agent reappointment (if needed)</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Direct state communication throughout the process</span>
+      </div>
+    </div>
+
+    <div class="get-row">
+      <div class="get-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg></div>
+      <div>
+        <span style="font-size:14px;font-weight:500;color:var(--gray-700);">Official reinstatement confirmation sent to you</span>
+      </div>
+    </div>
+</div>
     <p style="font-size:14px;color:var(--gray-500);margin-top:16px;margin-bottom:8px;"><strong>Note:</strong> The $290 flat fee covers Wyoming LLC reinstatement. State filing fees, back report fees, and late penalties are separate and paid directly to the state.</p>
     <p style="font-size:14px;color:var(--gray-500);margin-top:0;margin-bottom:20px;"><strong>Other states:</strong> Reinstatement pricing for non-Wyoming LLCs depends on multiple factors — number of missed years, state filing fees, registered agent status, franchise tax balance, and state-specific penalties. <a href="https://wa.me/917566631566" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline;">Message us on WhatsApp</a> with your state and we'll calculate a quote for you.</p>
     <a class="btn-green" href="https://buy.stripe.com/9B6dRaeee3FVdu17fY8EM3f" target="_blank" rel="noopener" style="display:inline-flex;padding:16px 32px;">Pay $290 &amp; Start Wyoming Reinstatement &rarr;</a>
@@ -449,13 +617,43 @@ footer img{height:24px}
 
   <h2>What We Need From You</h2>
   <p>To start the reinstatement process, we'll need:</p>
-  <ol>
-    <li>Your LLC name and state of formation</li>
-    <li>EIN (Tax ID number)</li>
-    <li>Current member/owner information</li>
-    <li>Any notices you received from the state about the dissolution</li>
-    <li>Copy of your passport (for identity verification)</li>
-  </ol>
+  <div class="proc-list" style="margin-top:24px;margin-bottom:32px;">
+
+    <div class="proc-row">
+      <div class="proc-n">1</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Your LLC name and state of formation</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">2</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">EIN (Tax ID number)</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">3</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Current member/owner information</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">4</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Any notices you received from the state about the dissolution</span>
+      </div>
+    </div>
+
+    <div class="proc-row">
+      <div class="proc-n">5</div>
+      <div>
+        <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Copy of your passport (for identity verification)</span>
+      </div>
+    </div>
+</div>
 
   <h2>How Long Does Reinstatement Take?</h2>
   <p>Processing time depends on the state and the volume of back reports. For most states, reinstatement completes within <strong>2-4 weeks</strong> from the date we submit the paperwork. Wyoming and New Mexico are typically on the faster end; Delaware and California can take longer.</p>

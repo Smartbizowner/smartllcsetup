@@ -329,6 +329,55 @@ footer img{height:24px}
   .footer-bottom-bar{text-align:left !important; padding-left:0 !important; padding-right:0 !important;}
   .footer-bottom-bar .footer-links{justify-content:flex-start !important;flex-wrap:wrap;}
 }
+
+/* ── CALCULATOR STYLES ── */
+.calc-grid {
+  display:grid;grid-template-columns:3fr 2fr;gap:48px;max-width:1100px;margin:64px auto;
+}
+@media(max-width:850px) {
+  .calc-grid { grid-template-columns:1fr; }
+}
+.c-group { margin-bottom: 24px; }
+.c-label { font-size:14px;font-weight:700;color:#111;margin-bottom:8px;display:block;}
+.c-sub { font-size:13px;color:var(--gray-500);margin-bottom:12px;line-height:1.5;}
+.c-select, .c-input {
+  width:100%;padding:14px 16px;font-size:15px;font-family:'Inter',sans-serif;
+  border:1px solid var(--border);border-radius:var(--r);background:#fff;
+  transition:border-color 0.2s, box-shadow 0.2s;
+  outline:none;
+}
+.c-select:focus, .c-input:focus { border-color:var(--blue);box-shadow:0 0 0 3px #eff6ff;}
+
+/* Custom Radio Cards */
+.radio-cards { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+.r-card {
+  border:1px solid var(--border);border-radius:var(--r);padding:16px;cursor:pointer;
+  transition:all 0.2s;background:#fff;position:relative;
+}
+.r-card:hover { border-color:var(--gray-400); }
+.r-card input { position:absolute;opacity:0;cursor:pointer; }
+.r-card.active { border-color:var(--blue);background:#eff6ff;box-shadow:inset 0 0 0 1px var(--blue);}
+.r-title { font-weight:700;font-size:14px;color:#111;margin-bottom:4px;}
+.r-desc { font-size:12px;color:var(--gray-500);line-height:1.4;}
+
+/* Result Card Sticky */
+.result-box {
+  background:#fff;border:2px solid #111;border-radius:var(--r);padding:32px;
+  position:sticky;top:90px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.06);
+}
+.res-title { font-size:18px;font-weight:800;color:#111;margin-bottom:24px;text-align:center;}
+.res-row { display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:14px;}
+.res-lbl { color:var(--gray-700);font-weight:500;}
+.res-val { font-weight:700;color:#111;}
+.res-total { font-size:42px;font-weight:800;color:var(--blue);text-align:center;margin:16px 0 24px;line-height:1;}
+.res-total span { font-size:16px;color:var(--gray-500);font-weight:500;}
+
+/* Tag/Badge for Effective Rate */
+.eff-rate {
+  display:inline-block;padding:6px 12px;font-size:13px;font-weight:700;
+  color:#16a34a;background:#dcfce7;border-radius:50px;margin-bottom:24px;
+}
 </style>
 
 </head>
@@ -475,7 +524,7 @@ footer img{height:24px}
           Since you have US Residency or Physical Presence, your profits may be subject to US Federal Income Tax at graduated rates. We highly recommend consulting a US CPA for an exact calculation.
         </p>
 
-        <a class="btn-green" href="./index.html#pricing" style="width:100%;font-size:16px;padding:18px 0;margin-top:16px;">Form your LLC Today &rarr;</a>
+        <a class="btn-green" href="/index.html#pricing" style="width:100%;font-size:16px;padding:18px 0;margin-top:16px;">Form your LLC Today &rarr;</a>
         
         <p style="font-size:11px;color:var(--gray-400);margin-top:20px;text-align:center;line-height:1.5;">This calculator provides estimates based on standard interpretations of US tax codes for non-residents (No ECI/ETBUS). This is not legal or tax advice. You must still file informational forms (1120/5472) annually.</p>
       </div>
